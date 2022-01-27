@@ -1,3 +1,4 @@
+
 export const About = (props) => {
   return (
     <div id="about">
@@ -19,3 +20,4 @@ export const About = (props) => {
     </div>
   );
 };
+// export default About

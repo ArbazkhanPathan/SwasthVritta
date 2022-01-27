@@ -34,31 +34,31 @@ export const Navigation = (props) => {
         >
           <ul className='nav navbar-nav navbar-right text-color'>
             <li>
-              <a href='#header' className='page-scroll ' >
+              <NavLink to={'/'} className='page-scroll ' >
                 
                 Home
                 
-              </a>
+              </NavLink>
               
               
             </li>
             <li>
-              <a href='#kyp' className='page-scroll'>
+              <NavLink to={'/'} className='page-scroll'>
               Know Your Prakriti
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a className='page-scroll'>
+              <NavLink to={`/Aboutus`} className='page-scroll'>
                 
-                About
+                About_us
                 
-              </a>
+              </NavLink>
               
             </li>
             <li>
-              <a href='#products' className='page-scroll'>
+              <NavLink to={'/product'} className='page-scroll'>
                 Products
-              </a>
+              </NavLink>
             </li>
             
             <li>
@@ -67,19 +67,20 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href='#team' className='page-scroll'>
-                Blog
+              <a href='#' className='page-scroll'>
+              Sign in/up
               </a>
             </li>
             <li>
-              <a href='#contact' className='page-scroll'>
-                Contact
-              </a>
+              <NavLink to={'/blog'} className='page-scroll'>
+                Blog
+              </NavLink>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    
   )
 }
 
