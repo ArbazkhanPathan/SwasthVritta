@@ -87,7 +87,7 @@ export const Product = (props) => {
                   </button>
                   <button type="button" className="btn">Compare</button>
                 </div>
-                <div className="social-links">
+                {/* <div className="social-links">
                   <p>Share At: </p>
                   <a href="#">
                     <i className="fab fa-facebook-f" />
@@ -104,7 +104,7 @@ export const Product = (props) => {
                   <a href="#">
                     <i className="fab fa-pinterest" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
