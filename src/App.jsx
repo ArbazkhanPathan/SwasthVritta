@@ -1,16 +1,18 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Navigation } from "./components/navigation";
+import Navigation from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { About } from "./components/about";
 import Aboutus from "./components/aboutus";
 import Blog from "./components/blog";
+import SocialMedia from "./components/Socialmedia";
+import MapContainer from "./components/map";
 // import { Services } from "./components/services";
 import { Gallery } from "./components/gallery";
 import { Product } from "./components/product";
 import { Team } from "./components/Team";
-import { Counting } from "./components/counting";
+import Counting from "./components/counting";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
@@ -33,13 +35,15 @@ const App = () => {
       <Router>
       <Navigation />
       <Switch>
-          <Route exact path="/"> <Header  data={landingPageData.Header} /> <Features  /> <About data={landingPageData.About}/> <Counting data={landingPageData.Counting} />
+          <Route exact path="/"> <SocialMedia  /> <Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />
   
           
           </Route>
           <Route exact path="/gallery"> <Gallery  />
           </Route>
           <Route exact path="/blog"> <Blog  />
+          </Route>
+          <Route exact path="/map"> <MapContainer  />
           </Route>
           
           <Route exact path="/aboutus"> <Aboutus data={landingPageData.About}/> <Team data={landingPageData.Team} />

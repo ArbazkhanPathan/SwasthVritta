@@ -71,6 +71,7 @@ hr {
   border: 0;
 }
 /* Navigation */
+/*
 #menu {
   padding: 15px;
   transition: all 0.8s;
@@ -90,7 +91,6 @@ hr {
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  /* color: #555; */
   color: rgb(209, 209, 209);
   font-size: 15px;
   font-weight: 400;
@@ -105,7 +105,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  /* background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%); */
+  
   background: linear-gradient(to right, #e8ff63 0%, #fbe35c 100%);
   content: "";
   transition: width 0.2s;
@@ -213,9 +213,10 @@ a:focus,
   outline-offset: none;
 }
 
-
+*/
 
 /* Header Section */
+
 .intro {
   text-align:center;
 
@@ -232,7 +233,22 @@ a:focus,
   background-size: cover;
   -o-background-size: cover;
 }
-
+.kyp{
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5ca9fb;
+    background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+    padding: 14px 34px;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.5s linear;
+    border: 0;
+  
+}
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
 }
@@ -319,10 +335,16 @@ header .intro-text {
   /* put your font-family */
   font-size: 18px;
   padding: 20px 0px;
-  width: 150px;
+  width: 200px;
   border-radius: 6px;
   overflow: hidden;
 }
+@media only screen and (max-width: 400px){
+  #features .container .row .button-effect a {
+    margin: 2px;
+  }
+}
+
 /* effect-1 styles */
 .effect.effect-1 {
   transition: all 0.2s linear 0s;

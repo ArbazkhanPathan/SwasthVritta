@@ -17,7 +17,11 @@
 
 
 
-export const Counting = (props) => {
+const Counting = () => {
+
+  
+
+
     return (
       <div id='counting' className='text-center'>
         <div className='container'>
@@ -46,10 +50,11 @@ export const Counting = (props) => {
 
 
 
+
           </div>
         
         </div>
       </div>
     )
   }
-  
+  export default Counting
