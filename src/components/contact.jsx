@@ -117,6 +117,14 @@ export const Contact = (props) => {
             <div className='contact-item'>
               <p>
                 <span>
+                  <i className='fa fa-whatsapp'></i> WhatsApp
+                </span>{' '}
+                {props.data ? props.data.whatsapp : 'loading'}
+              </p>
+            </div>
+            <div className='contact-item'>
+              <p>
+                <span>
                   <i className='fa fa-envelope-o'></i> Email
                 </span>{' '}
                 {props.data ? props.data.email : 'loading'}
@@ -133,13 +141,23 @@ export const Contact = (props) => {
                     </a>
                   </li>
                   <li>
-                    <a href={props.data ? props.data.telegram_product : '/'}>
-                      <i className='fa fa-telegram'></i>
+                    <a href={props.data ? props.data.instagram : '/'}>
+                      <i className='fa fa-instagram'></i>
                     </a>
                   </li>
                   <li>
                     <a href={props.data ? props.data.telegram : '/'}>
                       <i className='fa fa-telegram'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={props.data ? props.data.mailto : '/'}>
+                      <i className='fa fa-envelope'></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={props.data ? props.data.whatsapp : '/'}>
+                      <i className='fa fa-whatsapp'></i>
                     </a>
                   </li>
                 </ul>

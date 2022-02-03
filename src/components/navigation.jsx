@@ -21,7 +21,7 @@ const Navigation = () => {
         boxClass.push('');
     }
 
-    const [isMenuSubMenu, setMenuSubMenu] = useState(false);
+    const [isMenuSubMenu, setMenuSubMenu,] = useState(false);
       
     const toggleSubmenu = () => {
       setMenuSubMenu(isMenuSubMenu === false ? true : false);
@@ -32,6 +32,18 @@ const Navigation = () => {
         boxClassSubMenu.push('sub__menus__Active');
     }else {
         boxClassSubMenu.push('');
+    }
+
+    const [isMenuSubMenu1, setMenuSubMenu1] = useState(false);
+    const toggleSubmenu1 = () => {
+        setMenuSubMenu1(isMenuSubMenu1 === false ? true : false);
+      };
+
+    let boxClassSubMenu1 = ["sub__menus"];
+    if(isMenuSubMenu1) {
+        boxClassSubMenu1.push('sub__menus__Active');
+    }else {
+        boxClassSubMenu1.push('');
     }
 
    
@@ -76,6 +88,15 @@ const Navigation = () => {
                         </ul>
                     </li>
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/blog`}> Blog </NavLink> </li>
+                    <li onClick={toggleSubmenu1} className="menu-item sub__menus__arrows" > <Link to="#"> Gallery <FiChevronDown /> </Link>
+                        <ul className={boxClassSubMenu1.join(' ')} > 
+                            {/* <li > <NavLink onClick={toggleClass} activeClassName='is-active'  to={"https://form.jotform.com/213123497958465"}> Register as Doctor </NavLink> </li> */}
+                            <li > <NavLink onClick={toggleClass} activeClassName='is-active' to={`/achievement`}> Achievements </NavLink> </li>
+                            {/* <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> user signUp </NavLink> </li> */}
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/videos`}> Videos </NavLink> </li>
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/photos`}> Photos </NavLink> </li>
+                        </ul>
+                    </li>
                     {/* <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Contact`}> Contact </NavLink> </li> */}
 
                     </ul>

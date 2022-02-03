@@ -6,6 +6,9 @@ import { Features } from "./components/features";
 import { About } from "./components/about";
 import Aboutus from "./components/aboutus";
 import Blog from "./components/blog";
+import Achievements from "./components/achievement";
+import Photos from "./components/photos";
+import Videos from "./components/videos";
 import SocialMedia from "./components/Socialmedia";
 import MapContainer from "./components/map";
 // import { Services } from "./components/services";
@@ -44,6 +47,12 @@ const App = () => {
           <Route exact path="/blog"> <Blog  />
           </Route>
           <Route exact path="/map"> <MapContainer  />
+          </Route>
+          <Route exact path="/achievement"> <Achievements  />
+          </Route>
+          <Route exact path="/photos"> <Photos />  
+          </Route>
+          <Route exact path="/videos"> <Videos />  
           </Route>
           
           <Route exact path="/aboutus"> <Aboutus data={landingPageData.About}/> <Team data={landingPageData.Team} />
