@@ -1,65 +1,26 @@
-
-// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react-17';
-// const Mapcontainer = () => {
-//     return (
-//         <Map google={this.props.google}
-//         center={{
-//           lat: 40.854885,
-//           lng: -88.081807
-//         }}
-//         zoom={15}
-//         onClick={this.onMapClicked}>
-
-//         <Marker onClick={this.onMarkerClick}
-//                 name={'Current location'} />
-
-//         <InfoWindow onClose={this.onInfoWindowClose}>
-            
-//         </InfoWindow>
-//       </Map>
-//     )
-// }
-
-// export default GoogleApiWrapper({
-//     apiKey:"AIzaSyCMoBnwX2BEnRCfBeGqP1SVEgjyHZrMjoU"
-// })(Mapcontainer)
- 
-// Mapcontainer
+import "./map.css"
 
 
-
-// import "./map.css";
-import React, { Component} from "react"
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react-17';
-
-export class MapContainer extends Component {
-  render() {
-    return (
-      
-      <Map className="mapswas" google={this.props.google}
-      // style={{width: '50%', height: '300px'}}
-      initialCenter={{
-        lat: 22.316588217772278,
-        lng:  73.13782837637855
-      }}
-      zoom={15}
-      onClick={this.onMapClicked}>
-
-        <Marker onClick={this.onMarkerClick}
-                name={'Current location'} />
-
-        <InfoWindow onClose={this.onInfoWindowClose}>
-            
-        </InfoWindow>
-      </Map>
-    );
-  }
+const Map = () => {
+  return (
+    <div className="map">
+      <div className="map-img">
+        <img src="img/map/map.jpeg" alt="image"/>
+      </div>
+      <div className="map-details">
+        <h3>Head office : </h3>
+        <p className="para">Gotri , Vadodara , 390021</p>
+    
+        <h3>Branches : </h3>
+         <p className="para">Msisec ,Sardar Nagar, Nizampura, Vadodara, Gujarat 390002</p> 
+         
+        <h3>OPEN 24*7 WHENEVER YOU NEED US</h3>
+         <p className="para">PLEASE REACH OUT TO US VIA EMAIL/PHONE/TEXT ONLY</p> 
+    
+    
+      </div>
+      </div>
+  )
 }
 
-export default GoogleApiWrapper({
-  apiKey: ("AIzaSyCMoBnwX2BEnRCfBeGqP1SVEgjyHZrMjoU")
-})(MapContainer)
-
-
-
-
+export default Map
