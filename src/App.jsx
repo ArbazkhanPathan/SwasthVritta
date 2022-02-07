@@ -10,6 +10,7 @@ import Namaste from "./components/namaste";
 import Achievements from "./components/achievement";
 import Photos from "./components/photos";
 import Map from "./components/map";
+import Slider from "./components/slider";
 import Videos from "./components/videos";
 import SocialMedia from "./components/Socialmedia";
 import MapContainer from "./components/map";
@@ -41,7 +42,7 @@ const App = () => {
       <Router>
       <Navigation />
       <Switch>
-          <Route exact path="/"> <SocialMedia  /> <Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />
+          <Route exact path="/"> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />
   
           
           </Route>
