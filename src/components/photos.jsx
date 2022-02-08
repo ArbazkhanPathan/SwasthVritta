@@ -15,6 +15,14 @@ const Photos = () => {
           />
         </span>
       </div>
+      <div className="image" data-name="photos">
+        <span>
+          <img
+            src="https://drive.google.com/uc?export=view&id=1uQMxmvqORChe6hRFiH0Ip2Z8o61sEtXa"
+            alt="ach2"
+          />
+        </span>
+      </div>
       
       
     </div>
