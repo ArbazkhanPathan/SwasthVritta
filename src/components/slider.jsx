@@ -21,7 +21,7 @@ const Slider = () => {
                 <img src="img/slider/K.png" alt="image"/>
             </div>
             <div className="slide">
-                <img src="img/slider/MSME.png" alt="image"/>
+                <img src="https://drive.google.com/uc?export=view&id=1VEtUOXxFlc2UJxhc0Ij4FMf9-tHXrftS" alt="image"/>
             </div>
             <div className="slide">
                 <img src="img/slider/MSU.png" alt="image"/>
@@ -51,7 +51,7 @@ const Slider = () => {
                 <img src="img/slider/K.png" alt="image"/>
             </div>
             <div className="slide">
-                <img src="img/slider/MSME.png" alt="image"/>
+                <img src="https://drive.google.com/uc?export=view&id=1VEtUOXxFlc2UJxhc0Ij4FMf9-tHXrftS" alt="image"/>
             </div>
             <div className="slide">
                 <img src="img/slider/MSU.png" alt="image"/>
