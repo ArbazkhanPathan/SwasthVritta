@@ -1,0 +1,21 @@
+.loadingScreen{
+    z-index: 99;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#namaste{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% -20%;
+    margin: 1rem;
+}

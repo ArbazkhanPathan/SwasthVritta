@@ -23,6 +23,8 @@ import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import HashLoader from "react-spinners/HashLoader";
+import "./loading.css"
 // import Routepage from "./components/Route";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -31,17 +33,47 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 });
 
 const App = () => {
+  
   const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
     setLandingPageData(JsonData);
   }, []);
 
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout( () => {
+      setLoading(false)
+    }, 7500)
+  }, []);
+  
+  
+
+  
   return (
     <div>
-      
+      {
+        loading ? 
+        <div className="loadingScreen">
+          {/* <img id="namaste" src="https://cdn5.vectorstock.com/i/1000x1000/15/09/namaste-yoga-logo-template-vector-34871509.jpg" /> */}
+          {/* <img src="https://c.tenor.com/eYRNL1In-ooAAAAC/namaste-covid.gif" />   */}
+          {/* <img src="https://raw.githubusercontent.com/ptbhatcoder/ptbhatcoder/main/emoji-gifs/namaste.gif" />   */}
+          {/* <img src="https://c.tenor.com/0XRyFZlKl6wAAAAM/namaste-hello.gif" />   */}
+          <img src="https://media1.giphy.com/media/ZTJVto8oNzqmPj8zDL/200w.gif" />  
+          {/* <img id="namaste" src="https://tenor.com/bifVn.gif" /> */}
+          
+          {/* <HashLoader color={'#ffbb00'} loading={loading} size={150} /> */}
+        </div>
+        :
+        console.log("done")
+        // loading(false)
+        
+        
+      }
       <Router>
-      <Navigation />
-      <Switch>
+        <Navigation />
+        <Switch>
           <Route exact path="/"> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />
   
           
@@ -74,7 +106,7 @@ const App = () => {
         <Contact data={landingPageData.Contact} />
       {/* <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
-      <About data={landingPageData.About} /> */}
+    <About data={landingPageData.About} /> */}
       {/* <Routepage/> */}
       {/* <Counting data={landingPageData.Counting} /> */}
       {/* <Services data={landingPageData.Services} /> */}
@@ -82,8 +114,9 @@ const App = () => {
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
       {/* <Product data={landingPageData.Product} />
       <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} /> */}
-      </Router>
+    <Contact data={landingPageData.Contact} /> */}
+    </Router>
+      
     </div>
   );
 };
