@@ -22,6 +22,16 @@ const Videos = () => {
     <span>
       <video width="500px" height="500px" controls="controls">
         <source
+          src="https://drive.google.com/uc?export=view&id=1V5U6s6ia27ye-jUTN-C0P7tRDLBIDBWl"
+          type="video/mp4"
+        />
+      </video>{" "}
+    </span>
+  </div>
+  <div className="image" data-name="videos">
+    <span>
+      <video width="500px" height="500px" controls="controls">
+        <source
           src="https://drive.google.com/uc?export=view&id=1jc46ZLBp5hpMJeQrqotzqed-T4gxthDR"
           type="video/mp4"
         />

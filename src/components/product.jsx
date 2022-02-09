@@ -6,9 +6,20 @@ export const Product = (props) => {
         <div id='product'>
           <h1>Product</h1>
 
-          {/* <video id="videoBG" autoPlay muted loop>
-            <source href='img/videos/bottle_anim0001-0060.mkv' type="video/mp4"/>
-      </video>      */}
+          
+
+          <div className="image" data-name="photos">
+        <span>
+          <img
+          style={{alignItems: 'center',
+                  height: '70vh',
+                  width: '100%',
+                paddingBottom:'10px'}}
+            src="https://drive.google.com/uc?export=view&id=1VDV90nZQGAYLG74ecJ6z9mnj65076D9n"
+            alt="ach2"
+          />
+        </span>
+      </div>
 
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
