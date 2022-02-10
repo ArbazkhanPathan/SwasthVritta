@@ -69,12 +69,12 @@ export const Product = (props) => {
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
                   <i className="fas fa-star" />
-                  <i className="fas fa-star-half-alt" />
-                  <span>4.7(21)</span>
+                  <i className="fas fa-star" />
+                  <span>5.0(10)</span>
                 </div>
                 <div className="product-price">
-                  <p className="last-price">Old Price: <span>257.00</span></p>
-                  <p className="new-price">New Price: <span>₹ 249.00 (5%)</span></p>
+                  <p className="last-price">Old Price: <span>150.00</span></p>
+                  <p className="new-price">New Price: <span>₹ 99.00 (Excluding Delivery Charges</span></p>
                 </div>
                 <div className="product-detail">
                   <h2>about this item: </h2>

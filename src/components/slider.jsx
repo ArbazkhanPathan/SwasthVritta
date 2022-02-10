@@ -6,7 +6,12 @@ const Slider = () => {
         <div className="slide-track">
 
             <div className="slide">
-                <img src="img/slider/2275px-Google_Maps_Logo_2020.svg.png" alt="image"/>
+            <a href="http://ationstudios.live">
+                <img src="https://drive.google.com/uc?export=view&id=1sd9phLIHZmWVu9Tx6oZarDDDEbJ8aNZA" alt="image"/>
+                </a>
+            </div>
+            <div className="slide">
+                <img src="https://drive.google.com/uc?export=view&id=1VLfBW9EGFGbz2GszzP3yEJhBwt6252aV" alt="image"/>
             </div>
             <div className="slide">
                 <img src="img/slider/Canva_pro.png" alt="image"/>
@@ -36,7 +41,12 @@ const Slider = () => {
                 <img src="img/slider/startupindia.png" alt="image"/>
             </div>
             <div className="slide">
-                <img src="img/slider/2275px-Google_Maps_Logo_2020.svg.png" alt="image"/>
+                <a href="http://ationstudios.live">
+                <img src="https://drive.google.com/uc?export=view&id=1sd9phLIHZmWVu9Tx6oZarDDDEbJ8aNZA" alt="image"/>
+                </a>
+            </div>
+            <div className="slide">
+                <img src="https://drive.google.com/uc?export=view&id=1VLfBW9EGFGbz2GszzP3yEJhBwt6252aV" alt="image"/>
             </div>
             <div className="slide">
                 <img src="img/slider/Canva_pro.png" alt="image"/>
