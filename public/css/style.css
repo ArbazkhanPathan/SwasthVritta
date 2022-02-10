@@ -688,6 +688,11 @@ header .intro-text {
   padding: 10px 0 0;
   color: #888;
 }
+
+#team .container #row .team .thumbnail .caption i{
+  font-size:36px
+
+}
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;

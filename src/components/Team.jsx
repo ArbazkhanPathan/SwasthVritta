@@ -16,6 +16,11 @@ export const Team = (props) => {
                     <div className='caption'>
                       <h4>{d.name}</h4>
                       <p>{d.job}</p>
+                      {d.email}
+                      
+                      <a href={d.linkdin}>
+                      <i class="fa fa-linkedin-square" ></i>
+                    </a>
                     </div>
                   </div>
                 </div>

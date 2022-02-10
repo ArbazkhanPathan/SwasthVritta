@@ -122,12 +122,15 @@
     {
       "img": "img/team/Jinendra.jpeg",
       "name": "Jinendradutt Sharma",
-      "job": "Chief Executive Officer"
+      "job": "Chief Executive Officer",
+      "linkdin": "https://www.linkedin.com/in/jinendradutt-sharma-3b36a6201",
+      "email":""
     },
     {
       "img": "img/team/Chinmay.jpeg",
       "name": "Chinmay Kapruane",
-      "job": "Chief Managing Director"
+      "job": "Chief Managing Director",
+      "linkdin": "https://www.linkedin.com/in/chinmay-kapruan-76bb851aa"
     },
     {
       "img": "img/team/sayujya.jpeg",
@@ -163,7 +166,8 @@
     {
       "img": "img/team/Arbaaz.jpeg",
       "name": "Arbaz",
-      "job": "Intern"
+      "job": "Intern",
+      "linkdin":"https://www.linkedin.com/in/arbazkhan-pathan-a717691b8"
     },
     {
       "img": "img/team/Snehlata.jpeg",
