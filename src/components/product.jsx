@@ -79,7 +79,7 @@ export const Product = (props) => {
                 <div className="product-detail">
                   <h2>about this item: </h2>
                   <p>Eucalyptus oil is available as an essential oil that is used as a medicine to treat a variety of common diseases and conditions including nasal congestion, asthma, and as a tick repellant. Diluted eucalyptus oil may also be applied to the skin as a remedy for health problems such as arthritis and skin ulcers. Eucalyptus oil is also used to ease cold symptoms and provide respiratory health benefits.</p>
-                  {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p> */}
+                  
                   <ul>
                     <h3> Benefits</h3>
                     <li>Cough and cold </li>
@@ -88,11 +88,6 @@ export const Product = (props) => {
                     <li>Acne and Skin </li>
                     <li>Bug repellent </li>
                     <li>Muscle/Joint pain </li>
-                    {/* <li>Color: <span>Black</span></li>
-                    <li>Available: <span>in stock</span></li>
-                    <li>Category: <span>Shoes</span></li>
-                    <li>Shipping Area: <span>All over the world</span></li>
-                    <li>Shipping Fee: <span>Free</span></li> */}
 
                      
                   </ul>
@@ -104,24 +99,6 @@ export const Product = (props) => {
                   </button>
                   <button type="button" className="btn">Compare</button>
                 </div>
-                {/* <div className="social-links">
-                  <p>Share At: </p>
-                  <a href="#">
-                    <i className="fab fa-facebook-f" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-whatsapp" />
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-pinterest" />
-                  </a>
-                </div> */}
               </div>
             </div>
           </div>
