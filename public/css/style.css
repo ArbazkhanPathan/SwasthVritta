@@ -693,6 +693,24 @@ header .intro-text {
   font-size:36px
 
 }
+
+
+/* Prakriti assesment*/
+#Prakriti1 .container_assesment{
+  padding:10px;
+  margin: 5px;
+}
+#Prakriti1 .box_assesment{
+  padding: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width:100%;
+  border-radius: 10px;
+  box-shadow:10px 10px 10px rgba(34, 33, 25, 0.05);
+  background-color: rgb(233, 204, 75);
+}
+
+
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
@@ -840,3 +858,5 @@ label {
     margin: 50px 0;
   }
 }
+
+

@@ -18,6 +18,7 @@ import MapContainer from "./components/map";
 import { Gallery } from "./components/gallery";
 import { Product } from "./components/product";
 import { Team } from "./components/Team";
+import { Prakriti1 } from "./components/prakriti";
 import Counting from "./components/counting";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
@@ -100,6 +101,8 @@ const App = () => {
           <Route exact path="/product"> <Product />
           </Route>
           <Route exact path="/Team"> <Team />
+          </Route>
+          <Route exact path="/prakriti"> <Prakriti1 data={landingPageData.Prakriti1}/>
           </Route>
           
         </Switch>

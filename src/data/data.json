@@ -206,5 +206,78 @@
       "title": "Know Your Prakriti ",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     }
-  ]
+  ],
+  "Prakriti1":[
+    {
+        "question":"Does your skin remain moist throughout the year?",
+        "option1":"A) Always dry",
+        "option2":"B) Mostly dry except in some seasons",
+        "option3":"C) Mostly moist except a particular season",
+        "option4":"D) Always Moist"
+    },
+    {
+        "question":"Do you have thick black hair?",
+        "option1":"A)Thin and sparse",
+        "option2":"B)Coarse hair but enough hair",
+        "option3":"C)Moderate thickness, soft, healthy",
+        "option4":"D)Dense and thick"
+    },
+    {
+        "question":"Do you have a tendency to gain weight?",
+        "option1":"A)Difficult to gain weight",
+        "option2":"B)Can gain, but can lose weight easily",
+        "option3":"C)Gain easily, but take time to lose",
+        "option4":"D)Difficult to lose , difficult to gain"
+    },
+    {
+        "question":"Is your physique well-build by nature or plump or overweight?",
+        "option1":"A)Thin, small frame",
+        "option2":"B)Medium build",
+        "option3":"C)Moderate to well built ",
+        "option4":"D)Well-build, Plump"
+    },
+    {
+        "question":"Do you start work only after proper planning?",
+        "option1":"A)I do not plan",
+        "option2":"B)I plan sometimes",
+        "option3":"C)I plan most of the times",
+        "option4":"D)I always plan"
+    },
+    {
+        "question":"Do you usually take time to understand but can recall quickly?",
+        "option1":"A)Understand quickly but cannot recall easily",
+        "option2":"B)Understand quickly ad can recall easily",
+        "option3":"C)Takes time to understand and can recall most of the time",
+        "option4":"Takes time to understand but can easily recall"
+    },
+    {
+        "question":"Do you tend to consume less food and liquids in comparison to others?",
+        "option1":"A)I eat and drink very less",
+        "option2":"I eat very less most of the time",
+        "option3":"C)I am a moderate eater",
+        "option4":"D)I am a foodie"
+    },
+    {
+        "question":"Do you sweat less and is it odourless?",
+        "option1":"A)I sweat a lot even without any exercise",
+        "option2":"B)I sweat a lot during exercise",
+        "option3":"C)I swear moderately ",
+        "option4":"D)I hardly sweat"
+    },
+    {
+        "question":"Do you enjoy sitting in one place for a long time?",
+        "option1":"A)Never",
+        "option2":"B)Sometimes",
+        "option3":"C)Most of the time",
+        "option4":"D)Always"
+    },
+    {
+        "question":"Do you sleep well and not easily awakened?",
+        "option1":"A)Not at all",
+        "option2":"B)Sometimes",
+        "option3":"C)Most of the time",
+        "option4":"D)All the time"
+    }
+]
+
 }
