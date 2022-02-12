@@ -1,14 +1,32 @@
-import firebase from "firebase";
+// import firebase from "firebase";
 
-var firebaseApp = firebase.initializeApp({
+// var firebaseApp = firebase.initializeApp({
+    // apiKey: "AIzaSyCMoBnwX2BEnRCfBeGqP1SVEgjyHZrMjoU",
+    // authDomain: "swasthvritta0348.firebaseapp.com",
+    // projectId: "swasthvritta0348",
+    // storageBucket: "swasthvritta0348.appspot.com",
+    // messagingSenderId: "372965467933",
+    // appId: "1:372965467933:web:7c6857e1a1ee51a92123f4"
+// });
+
+// var db = firebaseApp.firestore();
+
+// export { db };
+
+import { initializeApp } from 'firebase/app';
+import { collection, getDocs } from 'firebase/firestore/lite';
+import { getFirestore } from 'firebase/firestore';
+import 'firebase/compat/firestore';
+
+// TODO: Replace the following with your app's Firebase project configuration
+const firebaseApp = {
     apiKey: "AIzaSyCMoBnwX2BEnRCfBeGqP1SVEgjyHZrMjoU",
     authDomain: "swasthvritta0348.firebaseapp.com",
     projectId: "swasthvritta0348",
     storageBucket: "swasthvritta0348.appspot.com",
     messagingSenderId: "372965467933",
-    appId: "1:372965467933:web:7c6857e1a1ee51a92123f4"
-});
+    appId: "1:372965467933:web:7c6857e1a1ee51a92123f4",
+};
 
-var db = firebaseApp.firestore();
-
-export { db };
+const app = initializeApp(firebaseApp);
+export const { db } = getFirestore(app);
