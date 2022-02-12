@@ -209,74 +209,142 @@
   ],
   "Prakriti1":[
     {
-        "question":"Does your skin remain moist throughout the year?",
-        "option1":"A) Always dry",
-        "option2":"B) Mostly dry except in some seasons",
-        "option3":"C) Mostly moist except a particular season",
-        "option4":"D) Always Moist"
+        "question":"1. Select your Physique type..",
+        "option1":"A)Thin",
+        "option2":"B)Medium ",
+        "option3":"C)Heavy"
     },
     {
-        "question":"Do you have thick black hair?",
-        "option1":"A)Thin and sparse",
-        "option2":"B)Coarse hair but enough hair",
-        "option3":"C)Moderate thickness, soft, healthy",
-        "option4":"D)Dense and thick"
+        "question":"2. Are you good at adapting and mixing with a variety of people",
+        "option1":"A)Sometimes",
+        "option2":"B)Yes, almost Times",
+        "option3":"C)Many Times"
     },
     {
-        "question":"Do you have a tendency to gain weight?",
-        "option1":"A)Difficult to gain weight",
-        "option2":"B)Can gain, but can lose weight easily",
-        "option3":"C)Gain easily, but take time to lose",
-        "option4":"D)Difficult to lose , difficult to gain"
+        "question":"3. Select your skin type",
+        "option1":"A)Dry and Rough ",
+        "option2":"B)Smooth",
+        "option3":"C)Oily"
     },
     {
-        "question":"Is your physique well-build by nature or plump or overweight?",
-        "option1":"A)Thin, small frame",
-        "option2":"B)Medium build",
-        "option3":"C)Moderate to well built ",
-        "option4":"D)Well-build, Plump"
+        "question":"4. Are your veins visible on skin ?",
+        "option1":"A)Visible (if veins are visible on hands and feet)",
+        "option2":"B)Fairly Visible (if veins become visible on effort)",
+        "option3":"C)Not visible (If veins not visible even on effort) "
     },
     {
-        "question":"Do you start work only after proper planning?",
-        "option1":"A)I do not plan",
-        "option2":"B)I plan sometimes",
-        "option3":"C)I plan most of the times",
-        "option4":"D)I always plan"
+        "question":"5.How is your Voice/Speech? ",
+        "option1":"A)Low Pitch and fast",
+        "option2":"B)High Pitch",
+        "option3":"C)Slow  Speech and deep voice"
     },
     {
-        "question":"Do you usually take time to understand but can recall quickly?",
-        "option1":"A)Understand quickly but cannot recall easily",
-        "option2":"B)Understand quickly ad can recall easily",
-        "option3":"C)Takes time to understand and can recall most of the time",
-        "option4":"Takes time to understand but can easily recall"
-    },
-    {
-        "question":"Do you tend to consume less food and liquids in comparison to others?",
-        "option1":"A)I eat and drink very less",
-        "option2":"I eat very less most of the time",
-        "option3":"C)I am a moderate eater",
-        "option4":"D)I am a foodie"
-    },
-    {
-        "question":"Do you sweat less and is it odourless?",
-        "option1":"A)I sweat a lot even without any exercise",
-        "option2":"B)I sweat a lot during exercise",
-        "option3":"C)I swear moderately ",
-        "option4":"D)I hardly sweat"
-    },
-    {
-        "question":"Do you enjoy sitting in one place for a long time?",
-        "option1":"A)Never",
+        "question":"6.When anxious/Tensed, do you know the reason?",
+        "option1":"A)Rarely",
         "option2":"B)Sometimes",
-        "option3":"C)Most of the time",
-        "option4":"D)Always"
+        "option3":"C)Yes, often"
     },
     {
-        "question":"Do you sleep well and not easily awakened?",
-        "option1":"A)Not at all",
+        "question":"7.What’s your eye size?",
+        "option1":"A)Small",
+        "option2":"B)Medium",
+        "option3":"C)Large"
+    },
+    {
+        "question":"8.Select your type of walk",
+        "option1":"A)Swift",
+        "option2":"B)Smooth",
+        "option3":"C)Slow "
+    },
+    {
+        "question":"9.How is your Thirst?",
+        "option1":"A)Variable",
+        "option2":"B)Excessive",
+        "option3":"C)Less"
+    },
+    {
+        "question":"10.How are your Bowel Habits?",
+        "option1":"A)Constipated Stools ",
+        "option2":"B)Regular ",
+        "option3":"C)Sluggish Stools"
+    },
+    {
+        "question":"11.Select your hair type",
+        "option1":"A)Rough and Hard",
+        "option2":"B)Medium",
+        "option3":"C)Soft & Smooth"
+    },
+    {
+        "question":"12.How’s Your Appetite?",
+        "option1":"A)Variable (Sometimes Heavy Diet & Sometimes Less Diet)",
+        "option2":"B)Heavy (Heavy Diets & Many meals)",
+        "option3":"C)Less and Regular (Less Diet & Regular Meals)"
+    },
+    {
+        "question":"13.Are you comfortable owning to your mistakes.",
+        "option1":"A)Sometimes ",
+        "option2":"B)Quite Rarely",
+        "option3":"C)Yes, Often"
+    },
+    {
+        "question":"14.How are your Eating Habits?",
+        "option1":"A)Quick Eating",
+        "option2":"B)Many Meals",
+        "option3":"C)Slow Eating"
+    },
+    {
+        "question":"15.How are your Sleep Habits?",
+        "option1":"A)Disturbed ",
+        "option2":"B)Moderate",
+        "option3":"C)Sound & Deep"
+    },
+    {
+        "question":"16.Do you recognize when you are stressed, and can kep calm and resort to solution.",
+        "option1":"A)Very rarely ",
         "option2":"B)Sometimes",
-        "option3":"C)Most of the time",
-        "option4":"D)All the time"
+        "option3":"C)Yes, Often"
+    },
+    {
+        "question":"17.Your Sweating Patterns",
+        "option1":"A)Very Less ",
+        "option2":"B)Excessive",
+        "option3":"C) Moderate"
+    },
+    {
+        "question":"18.Frequency of disease",
+        "option1":"A)Frequently ",
+        "option2":"B)Moderately",
+        "option3":"C)Rarely"
+    },
+    {
+        "question":"19.Do You recognize when You are Angry, and are you able to avoid losing my temper ?",
+        "option1":"A)Very rarely ",
+        "option2":"B)Sometimes",
+        "option3":"C)Yes, often"
+    },
+    {
+        "question":"20.Are you talkative?",
+        "option1":"A)Talkative ",
+        "option2":"B)Like to gossip",
+        "option3":"C)To the point talk"
+    },
+    {
+        "question":"21.Your physical Activity Level",
+        "option1":"A)Hyperactive ",
+        "option2":"B)Moderately Active ",
+        "option3":"C)Less Active"
+    },
+    {
+        "question":"22.Do You take initiative and are highly motivated, even when You don’t feel like doing something ?",
+        "option1":"A)Yes, Usally",
+        "option2":"B)Sometimes",
+        "option3":"C)Rarely"
+    },
+    {
+        "question":"23.When under pressure, are you able to think clearly and stay focused",
+        "option1":"A)Very rarely",
+        "option2":"B)Sometimes",
+        "option3":"C)Yes, Often"
     }
 ]
 
