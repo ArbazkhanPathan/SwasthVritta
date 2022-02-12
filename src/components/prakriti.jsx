@@ -16,6 +16,7 @@ export const Prakriti1 = (props) => {
                   <div className='box_assesment'>
                   <h2>{d.question}</h2>
                   <button>{d.option1}</button>
+                  
             <button>{d.option2}</button>
             <button>{d.option3}</button>
             <button>{d.option4}</button>
