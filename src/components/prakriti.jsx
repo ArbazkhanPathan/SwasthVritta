@@ -106,3 +106,37 @@ const Prakriti1 = () => {
 };
 
 export default Prakriti1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { db } from "../firebase";
+// import { collection, addDoc } from "firebase/firestore"; 
+// import { getFirestore, doc } from 'firebase/firestore';
+// import { setDoc } from "firebase/firestore/lite";
+
+
+// const specialofTheDay = doc(db, 'dailySpecial/2021-09-14');
+// function Prakriti1(){
+//   const docData = {
+//     name:'arbaz',
+//     price:3.99,
+//     milk: 'Whole',
+//     vegan: false,
+//   };
+//   setDoc(specialofTheDay, docData);
+// }
+
+// console.log('hello arbaz')
+// Prakriti1();
+// export default Prakriti1;
