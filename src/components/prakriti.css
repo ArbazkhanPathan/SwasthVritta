@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    border: none;
+}
+
+.full-screen{
+    height: 100vh;
+    width: 100%;
+}
+
+.container-prakriti {
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+    
+}
+
+
+
+.intros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.intros #message-blob{
+    height: 400px;
+    z-index: 0;
+}
+
+#namaste-img{
+    height: 200px;
+    position: absolute;
+    top: 51%;
+}
+
+#namaste-text{
+    font-size: 3vw;
+    position: absolute;
+    top: 42%;
+}
+
+#bot-img{
+    height: 150px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    padding-left: 28.5%;
+    width: 100%;
+    
+}
+
+.right{
+    padding-left: 70%;
+    margin-right: 0;
+}
+
+.about-h1{
+    font-size: 2vw;
+    background-color: rgb(255, 230, 0);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 3px 0.15em 0.75em 3px;
+}
+span{
+    font-size: 30px;
+    padding: none;
+    font-weight: 800;
+}
+
+.form-div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#names{
+    margin-top: 2rem;
+    padding: 4rem;
+    background-color: rgb(255, 230, 0);
+    width: 40%;
+    border-radius: 10px;
+}
+
+.input{
+    margin: 1rem;
+    height: 50px;
+    width: 45%;
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.w-long{
+    width: 95%;
+}
+
+.prakriti-info{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    font-size: 25px;
+    padding-left: 4rem;
+}
+.prakriti-text{
+    display: flex;
+    background-color: rgb(255, 230, 0);
+    width: 80%;
+    margin-top: 5rem;
+    flex-direction: column;
+    border-radius: 0px 12em 12em 0px;
+}
+
+.prakriti-text p, .prakriti-text h1{
+    padding: 2rem;
+}
+
+.prakriti-text h1{
+    font-size: 3rem;
+}
+.prakriti-text p {
+    font-size: 35px;
+}
+
+.no-pad{
+    margin: 0px;
+}
+
+.sub-list{
+    padding-left: 6rem;
+}
+
+.prakriti-info h2{
+    font-size: 20px;
+    padding-left: 3rem;
+    margin-top: 1rem;
+    color: black;
+}
+
+.container_assesment{
+    background-color: rgb(255, 230, 0);
+    padding: 2rem;
+}
+
+.box_assesment h2{
+    font-size: 20px;
+}
+.box_assesment button{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-left: 15px;
+    border: none;
+}
+
+
+
+
+
+@media screen and (max-width : 1080px) {
+    #namaste-text{
+        font-size: 35px;
+        top: 46%;
+    }
+    
+    .about-h1{
+        font-size: 25px;
+        top: 46%;
+    }
+    
+    .intros #message-blob{
+        height: 15%;
+    }
+
+    #namaste-img{
+        height: 10%;
+        top: 50%;
+    }
+
+    #names{
+        width: 80%;
+    }
+    .form-div .input{
+        width: 95%;
+        margin: none;
+    }
+
+    .heading{
+        display: flex;
+        margin-left: 3rem ;
+        padding-left: 0px;
+    }
+    .list{
+        font-size: 20px;
+        padding: 0px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width : 600px) {
+    #namaste-text {
+        top: 55%;
+    }
+
+    h2{
+        margin-top: 3rem;
+        padding-left: 3rem;
+        font-size: 17px;
+    }
+    .about-h1{
+        font-size: 15px;
+        top: 46%;
+    }
+    span{
+        font-size: 20px;
+    }
+    .intros #message-blob{
+        height: 15%;
+    }
+
+    #namaste-img{
+        height: 10%;
+        top: 62%;
+    }
+
+    #names{
+        width: 90%;
+        padding: 20px;
+    }
+    .form-div .input{
+        width: 90%;
+        margin: 7px;
+        height: 7%;
+        
+    }
+
+
+    #bot-img{
+        height: 70px;
+    }
+
+    .list{
+        padding-left: 3rem;
+        font-size: 15px;
+    }
+    .sub-list {
+        font-size: 12px;
+        padding-left: 4rem;
+    }
+
+    
+
+    .heading{
+        display: flex;
+        margin-left: 0rem ;
+        padding-left: 0px;
+    }
+    .prakriti-text{
+        padding: 1rem;
+    }
+
+    .prakriti-text p, .prakriti-text h1{
+        font-size: 100%;
+        padding: 2rem;
+        margin: .5rem;
+        color: black;
+    }
+
+    .prakriti-text h1{
+        padding-left: 2.5rem;
+    }
+
+    .info-box{
+        margin-top: 10rem;
+    }
+
+    .prakriti-info{
+        padding-top: 3rem;
+    }
+
+    .box_assesment{
+        display: flex;
+        flex-direction: column;
+    }
+    .box_assesment button{
+        margin-top: 5px;
+    }
+
+}
+

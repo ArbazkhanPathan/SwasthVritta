@@ -18,7 +18,7 @@ import MapContainer from "./components/map";
 import { Gallery } from "./components/gallery";
 import { Product } from "./components/product";
 import { Team } from "./components/Team";
-import Prakriti1 from "./components/prakriti";
+import Prakriti1, { Prakriti } from "./components/Prakriti";
 import Counting from "./components/counting";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
@@ -79,35 +79,35 @@ const App = () => {
   
           
           </Route>
-          <Route exact path="/gallery"> <Gallery  />
+          <Route exact path="/gallery"> <Gallery  /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/blog"> <Blog  />
+          <Route exact path="/blog"> <Blog  /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/map"> <MapContainer  />
+          <Route exact path="/map"> <MapContainer  /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/achievement"> <Achievements  />
+          <Route exact path="/achievement"> <Achievements  /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/photos"> <Photos />  
+          <Route exact path="/photos"> <Photos />   <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/videos"> <Videos />  
+          <Route exact path="/videos"> <Videos />   <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/namaste"> <Namaste />  
+          <Route exact path="/namaste"> <Namaste />   <Contact data={landingPageData.Contact} />
           </Route>
           
-          <Route exact path="/aboutus"> <Aboutus data={landingPageData.About}/> <Team data={landingPageData.Team} />
+          <Route exact path="/aboutus"> <Aboutus data={landingPageData.About}/> <Team data={landingPageData.Team} /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/counting"> <Counting />
+          <Route exact path="/counting"> <Counting /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/product"> <Product />
+          <Route exact path="/product"> <Product /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/Team"> <Team />
+          <Route exact path="/Team"> <Team /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/prakriti"> <Prakriti1 />
+          <Route exact path="/prakriti"> <Prakriti />
           {/* <Route exact path="/prakriti"> <Prakriti1 data={landingPageData.Prakriti1}/> */}
           </Route>
           
         </Switch>
-        <Contact data={landingPageData.Contact} />
+        
       {/* <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
     <About data={landingPageData.About} /> */}
