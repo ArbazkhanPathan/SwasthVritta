@@ -109,8 +109,9 @@
                         
 import { db } from "../firebase";                        
 import "./prakriti.css"
-                        
-export const Prakriti = (props) => {
+import React, { useState, useEffect } from "react";
+// export const Prakriti = (props) => {
+  const Prakriti1 = (props) => {
   return (
       <div>
       <div className="container-prakriti">
@@ -282,7 +283,7 @@ export const Prakriti = (props) => {
 
 
 
-
+export default Prakriti1;
 
 
 

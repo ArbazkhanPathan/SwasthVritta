@@ -18,7 +18,8 @@ import MapContainer from "./components/map";
 import { Gallery } from "./components/gallery";
 import { Product } from "./components/product";
 import { Team } from "./components/Team";
-import Prakriti1, { Prakriti } from "./components/Prakriti";
+// import Prakriti1, { Prakriti } from "./components/Prakriti";
+import Prakriti1 from "./components/prakriti";
 import Counting from "./components/counting";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
@@ -75,7 +76,7 @@ const App = () => {
       <Router>
         <Navigation />
         <Switch>
-          <Route exact path="/"> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />
+          <Route exact path="/"> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />  <Contact data={landingPageData.Contact} />
   
           
           </Route>
@@ -102,8 +103,8 @@ const App = () => {
           </Route>
           <Route exact path="/Team"> <Team /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/prakriti"> <Prakriti />
-          {/* <Route exact path="/prakriti"> <Prakriti1 data={landingPageData.Prakriti1}/> */}
+          {/* <Route exact path="/prakriti"> <Prakriti /> */}
+          <Route exact path="/prakriti"> <Prakriti1 data={landingPageData.Prakriti1}/>
           </Route>
           
         </Switch>
@@ -117,8 +118,8 @@ const App = () => {
       {/* <Gallery data={landingPageData.Gallery}/> */}
       {/* <Testimonials data={landingPageData.Testimonials} /> */}
       {/* <Product data={landingPageData.Product} />
-      <Team data={landingPageData.Team} />
-    <Contact data={landingPageData.Contact} /> */}
+      <Team data={landingPageData.Team} />*/}
+    {/* <Contact data={landingPageData.Contact} />  */}
     </Router>
       
     </div>
