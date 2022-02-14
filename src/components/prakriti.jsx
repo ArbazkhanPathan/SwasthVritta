@@ -112,6 +112,48 @@ import "./prakriti.css"
 import React, { useState, useEffect } from "react";
 // export const Prakriti = (props) => {
   const Prakriti1 = (props) => {
+        const [fname, setfName] = useState("");
+        const [lname, setlName] = useState("");
+        const [email, setEmail] = useState("");
+        const [city, setCity] = useState("");
+        const [state, setState] = useState("");
+        const [occupation, setOccupation] = useState("");
+        const [address, setAddress] = useState("");
+
+        const [loader, setLoader] = useState(false);
+
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            setLoader(true);
+
+        db.collection("prakriti")
+        .add({
+            fname:fname,
+            lname: lname,
+            email: email,
+            city: city,
+            state: state,
+            occupation: occupation,
+            address: address,
+        })
+        .then(() => {
+            setLoader(false);
+            alert("Your Prakratti will be mailed you in the provided mailId by you👍");
+          })
+          .catch((error) => {
+            alert(error.message);
+            setLoader(false);
+          });
+          setfName("");
+          setlName("");
+          setEmail("");
+          setCity("");
+          setState("");
+          setOccupation("");
+          setAddress("");
+        };
+          
+
   return (
       <div>
       <div className="container-prakriti">
@@ -122,7 +164,7 @@ import React, { useState, useEffect } from "react";
           <img id="namaste-img" src="./img/images/namaste-img.png" />
         </div>
             
-        <div className="form-div full-screen">
+        {/* <div className="form-div full-screen">
           <div className="heading">
             <img src="./img/images/bot.png" id="bot-img" alt="bot" />
               <p className="about-h1"><span>Hi I am Havya, Health Bot<br /></span>Tell me about you </p>
@@ -156,7 +198,7 @@ import React, { useState, useEffect } from "react";
                 <input className="w-long input" type="file" name="photo" id="photo" placeholder="Upload you photo" />
                 <button className="w-long input">Submit</button>
             </form>
-        </div>
+        </div> */}
 
         <div className="prakriti-info full-screen">
             <div className="heading">
@@ -253,6 +295,44 @@ import React, { useState, useEffect } from "react";
             </div>
         </div>
 
+        {/* form started */}
+        <form className="form" onSubmit={handleSubmit}>
+        <div className="form-div full-screen">
+          <div className="heading">
+            <img src="./img/images/bot.png" id="bot-img" alt="bot" />
+              <p className="about-h1"><span>Hi I am Havya, Health Bot<br /></span>Tell me about you </p>
+            </div>
+            <div id="names">
+                <div className="form-in">
+                    <input className="input" type="text" name="fname" id="fname" placeholder="First Name" value={fname}
+                                 onChange={(e) => setfName(e.target.value)}/>
+                    <input className="input" type="text" name="lname" id="lname" placeholder="Last Name"/>
+                </div>
+                <div>
+                    <input type="email" className="w-long input" name="email" id="email" placeholder="Email Address" /> 
+                </div>
+                <div className="form-in">
+                   <input className="input" type="text" name="address" id="city" placeholder="City" /> 
+                   <input className="input" type="text" name="address" id="state" placeholder="State" /> 
+                </div>
+                <div>
+                   <input className="input w-long" type="drop"  name="phno" id="phno" placeholder="Mobile Number" /> 
+                </div>
+                <div>
+                   <select className="w-long input" id="occupation" placeholder="">
+                       <option>Student</option>
+                       <option>Employee</option>
+                       <option>House Wife</option>
+                       <option>Others</option>
+                   </select>
+                </div>
+                <div>
+                   <input type="text" className="w-long input" name="address" id="address" placeholder="Address" /> 
+                </div>
+                {/* <input className="w-long input" type="file" name="photo" id="photo" placeholder="Upload you photo" /> */}
+                
+            </div>
+        </div>
         <div className="full-screen 4q-assessment">
             <div className='container_assesment'>
           {/* <div className='box_assesment'> */}
@@ -268,11 +348,15 @@ import React, { useState, useEffect } from "react";
                         
                     </div>
                 </div>
+                
               ))
               : 'Loading...'}
           </div>
+          <button className="w-long input" type="submit">Submit</button>
           
         </div>
+        </form>
+        
   </div>
 </div>
 
