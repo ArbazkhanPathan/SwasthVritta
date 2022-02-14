@@ -120,6 +120,7 @@ import React, { useState, useEffect } from "react";
         const [mobileno, setMobileno] = useState("");
         const [occupation, setOccupation] = useState("");
         const [address, setAddress] = useState("");
+        const [prakritians, setPrakritians] = useState("");
 
         const [loader, setLoader] = useState(false);
 
@@ -137,6 +138,7 @@ import React, { useState, useEffect } from "react";
             mobileno: mobileno,
             occupation: occupation,
             address: address,
+            prakritians: prakritians
         })
         .then(() => {
             setLoader(false);
@@ -153,6 +155,7 @@ import React, { useState, useEffect } from "react";
           setState("");
           setOccupation("");
           setAddress("");
+          setPrakritians("");
         };
           
 
@@ -350,9 +353,12 @@ import React, { useState, useEffect } from "react";
                 <div key={`${d.question}-${i}`} >
                     <div className='box_assesment'>
                         <h2>{d.question}</h2>
-                        <button>{d.option1}</button>
+                        <input type="radio" name={d.id} value={d.option1} onChange={(e) => setPrakritians(e.target.value)}/>{d.option1}
+                        <input type="radio" name={d.id} value={d.option2} onChange={(e) => setPrakritians(e.target.value)}/>{d.option2}
+                        <input type="radio" name={d.id} value={d.option3} onChange={(e) => setPrakritians(e.target.value)}/>{d.option3}
+                        {/* <button>{d.option1}</button>
                         <button>{d.option2}</button>
-                        <button>{d.option3}</button>
+                        <button>{d.option3}</button> */}
                         <br/>
                         
                     </div>
