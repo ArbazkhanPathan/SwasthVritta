@@ -117,6 +117,7 @@ import React, { useState, useEffect } from "react";
         const [email, setEmail] = useState("");
         const [city, setCity] = useState("");
         const [state, setState] = useState("");
+        const [mobileno, setMobileno] = useState("");
         const [occupation, setOccupation] = useState("");
         const [address, setAddress] = useState("");
 
@@ -133,6 +134,7 @@ import React, { useState, useEffect } from "react";
             email: email,
             city: city,
             state: state,
+            mobileno: mobileno,
             occupation: occupation,
             address: address,
         })
@@ -306,20 +308,26 @@ import React, { useState, useEffect } from "react";
                 <div className="form-in">
                     <input className="input" type="text" name="fname" id="fname" placeholder="First Name" value={fname}
                                  onChange={(e) => setfName(e.target.value)}/>
-                    <input className="input" type="text" name="lname" id="lname" placeholder="Last Name"/>
+                    <input className="input" type="text" name="lname" id="lname" placeholder="Last Name" value={lname}
+                                 onChange={(e) => setlName(e.target.value)}/>
                 </div>
                 <div>
-                    <input type="email" className="w-long input" name="email" id="email" placeholder="Email Address" /> 
+                    <input type="email" className="w-long input" name="email" id="email" placeholder="Email Address" value={email}
+                                 onChange={(e) => setEmail(e.target.value)} /> 
                 </div>
                 <div className="form-in">
-                   <input className="input" type="text" name="address" id="city" placeholder="City" /> 
-                   <input className="input" type="text" name="address" id="state" placeholder="State" /> 
+                   <input className="input" type="text" name="address" id="city" placeholder="City" value={city}
+                                 onChange={(e) => setCity(e.target.value)}/> 
+                   <input className="input" type="text" name="address" id="state" placeholder="State" value={state}
+                                 onChange={(e) => setState(e.target.value)}/> 
                 </div>
                 <div>
-                   <input className="input w-long" type="drop"  name="phno" id="phno" placeholder="Mobile Number" /> 
+                   <input className="input w-long" type="drop"  name="phno" id="phno" placeholder="Mobile Number"value={mobileno}
+                                 onChange={(e) => setMobileno(e.target.value)} /> 
                 </div>
                 <div>
-                   <select className="w-long input" id="occupation" placeholder="">
+                   <select className="w-long input" id="occupation" placeholder="" value={occupation}
+                                 onChange={(e) => setOccupation(e.target.value)}>
                        <option>Student</option>
                        <option>Employee</option>
                        <option>House Wife</option>
@@ -327,7 +335,8 @@ import React, { useState, useEffect } from "react";
                    </select>
                 </div>
                 <div>
-                   <input type="text" className="w-long input" name="address" id="address" placeholder="Address" /> 
+                   <input type="text" className="w-long input" name="address" id="address" placeholder="Address" value={address}
+                                 onChange={(e) => setAddress(e.target.value)}/> 
                 </div>
                 {/* <input className="w-long input" type="file" name="photo" id="photo" placeholder="Upload you photo" /> */}
                 
