@@ -121,6 +121,29 @@ import React, { useState, useEffect } from "react";
         const [occupation, setOccupation] = useState("");
         const [address, setAddress] = useState("");
         const [prakritians, setPrakritians] = useState("");
+        const [praque1, setPraque1] = useState("");
+        const [praque2, setPraque2] = useState("");
+        const [praque3, setPraque3] = useState("");
+        const [praque4, setPraque4] = useState("");
+        const [praque5, setPraque5] = useState("");
+        const [praque6, setPraque6] = useState("");
+        const [praque7, setPraque7] = useState("");
+        const [praque8, setPraque8] = useState("");
+        const [praque9, setPraque9] = useState("");
+        const [praque10, setPraque10] = useState("");
+        const [praque11, setPraque11] = useState("");
+        const [praque12, setPraque12] = useState("");
+        const [praque13, setPraque13] = useState("");
+        const [praque14, setPraque14] = useState("");
+        const [praque15, setPraque15] = useState("");
+        const [praque16, setPraque16] = useState("");
+        const [praque17, setPraque17] = useState("");
+        const [praque18, setPraque18] = useState("");
+        const [praque19, setPraque19] = useState("");
+        const [praque20, setPraque20] = useState("");
+        const [praque21, setPraque21] = useState("");
+        const [praque22, setPraque22] = useState("");
+        const [praque23, setPraque23] = useState("");
 
         const [loader, setLoader] = useState(false);
 
@@ -138,7 +161,30 @@ import React, { useState, useEffect } from "react";
             mobileno: mobileno,
             occupation: occupation,
             address: address,
-            prakritians: prakritians
+            prakritians: prakritians,
+            praque1:praque1,
+            praque2:praque2,
+            praque3:praque3,
+            praque4:praque4,
+            praque5:praque5,
+            praque6:praque6,
+            praque7:praque7,
+            praque8:praque8,
+            praque9:praque9,
+            praque10:praque10,
+            praque11:praque11,
+            praque12:praque12,
+            praque13:praque13,
+            praque14:praque14,
+            praque15:praque15,
+            praque16:praque16,
+            praque17:praque17,
+            praque18:praque18,
+            praque19:praque19,
+            praque20:praque20,
+            praque21:praque21,
+            praque22:praque22,
+            praque23:praque23
         })
         .then(() => {
             setLoader(false);
@@ -156,7 +202,34 @@ import React, { useState, useEffect } from "react";
           setOccupation("");
           setAddress("");
           setPrakritians("");
+          setPraque1("");
+          setPraque2("");
+          setPraque3("");
+          setPraque4("");
+          setPraque5("");
+          setPraque6("");
+          setPraque7("");
+          setPraque8("");
+          setPraque9("");
+          setPraque10("");
+          setPraque11("");
+          setPraque12("");
+          setPraque13("");
+          setPraque14("");
+          setPraque15("");
+          setPraque16("");
+          setPraque17("");
+          setPraque18("");
+          setPraque19("");
+          setPraque20("");
+          setPraque21("");
+          setPraque22("");
+          setPraque23("");
         };
+        // const add = (e)=> {
+        //     setPrakritians([...prakritians, {e.target.value}])
+
+        // }
           
 
   return (

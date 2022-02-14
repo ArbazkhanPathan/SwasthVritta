@@ -67,3 +67,247 @@
                          };
                         
                          export default Prakriti1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         <div className='box_assesment'>
+                        <h2>{d.question1}</h2>
+                        <input type="radio" name={d.id1} value={d.q1o1} onChange={(e) => setPraque1(e.target.value)}/>{d.q1o1}
+                        <input type="radio" name={d.id1} value={d.q1o2} onChange={(e) => setPraque1(e.target.value)}/>{d.q1o2}
+                        <input type="radio" name={d.id1} value={d.q1o3} onChange={(e) => setPraque1(e.target.value)}/>{d.q1o3}
+                        
+                        <br/>
+                        
+                        </div>
+                        
+
+                        <div className='box_assesment'>
+                        <h2>{d.question2}</h2>
+                        <input type="radio" name={d.id2} value={d.q2o1} onChange={(e) => setPraque2(e.target.value)}/>{d.q2o1}
+                        <input type="radio" name={d.id2} value={d.q2o2} onChange={(e) => setPraque2(e.target.value)}/>{d.q2o2}
+                        <input type="radio" name={d.id2} value={d.q2o3} onChange={(e) => setPraque2(e.target.value)}/>{d.q2o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question3}</h2>
+                        <input type="radio" name={d.id3} value={d.q3o1} onChange={(e) => setPraque3(e.target.value)}/>{d.q3o1}
+                        <input type="radio" name={d.id3} value={d.q3o2} onChange={(e) => setPraque3(e.target.value)}/>{d.q3o2}
+                        <input type="radio" name={d.id3} value={d.q3o3} onChange={(e) => setPraque3(e.target.value)}/>{d.q3o3}
+                        <br/>
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question4}</h2>
+                        <input type="radio" name={d.id4} value={d.q4o1} onChange={(e) => setPraque4(e.target.value)}/>{d.q4o1}
+                        <input type="radio" name={d.id4} value={d.q4o2} onChange={(e) => setPraque4(e.target.value)}/>{d.q4o2}
+                        <input type="radio" name={d.id4} value={d.q4o3} onChange={(e) => setPraque4(e.target.value)}/>{d.q4o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question5}</h2>
+                        <input type="radio" name={d.id5} value={d.q5o1} onChange={(e) => setPraque5(e.target.value)}/>{d.q5o1}
+                        <input type="radio" name={d.id5} value={d.q5o2} onChange={(e) => setPraque5(e.target.value)}/>{d.q5o2}
+                        <input type="radio" name={d.id5} value={d.q5o3} onChange={(e) => setPraque5(e.target.value)}/>{d.q5o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question6}</h2>
+                        <input type="radio" name={d.id6} value={d.q6o1} onChange={(e) => setPraque6(e.target.value)}/>{d.q6o1}
+                        <input type="radio" name={d.id6} value={d.q6o2} onChange={(e) => setPraque6(e.target.value)}/>{d.q6o2}
+                        <input type="radio" name={d.id6} value={d.q6o3} onChange={(e) => setPraque6(e.target.value)}/>{d.q6o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question7}</h2>
+                        <input type="radio" name={d.id7} value={d.q7o1} onChange={(e) => setPraque7(e.target.value)}/>{d.q7o1}
+                        <input type="radio" name={d.id7} value={d.q7o2} onChange={(e) => setPraque7(e.target.value)}/>{d.q7o2}
+                        <input type="radio" name={d.id7} value={d.q7o3} onChange={(e) => setPraque7(e.target.value)}/>{d.q7o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question8}</h2>
+                        <input type="radio" name={d.id8} value={d.q8o1} onChange={(e) => setPraque8(e.target.value)}/>{d.q8o1}
+                        <input type="radio" name={d.id8} value={d.q8o2} onChange={(e) => setPraque8(e.target.value)}/>{d.q8o2}
+                        <input type="radio" name={d.id8} value={d.q8o3} onChange={(e) => setPraque8(e.target.value)}/>{d.q8o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question9}</h2>
+                        <input type="radio" name={d.id9} value={d.q9o1} onChange={(e) => setPraque9(e.target.value)}/>{d.q9o1}
+                        <input type="radio" name={d.id9} value={d.q9o2} onChange={(e) => setPraque9(e.target.value)}/>{d.q9o2}
+                        <input type="radio" name={d.id9} value={d.q9o3} onChange={(e) => setPraque9(e.target.value)}/>{d.q9o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question10}</h2>
+                        <input type="radio" name={d.id10} value={d.q10o1} onChange={(e) => setPraque10(e.target.value)}/>{d.q10o1}
+                        <input type="radio" name={d.id10} value={d.q10o2} onChange={(e) => setPraque10(e.target.value)}/>{d.q10o2}
+                        <input type="radio" name={d.id10} value={d.q10o3} onChange={(e) => setPraque10(e.target.value)}/>{d.q10o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question11}</h2>
+                        <input type="radio" name={d.id11} value={d.q11o1} onChange={(e) => setPraque11(e.target.value)}/>{d.q11o1}
+                        <input type="radio" name={d.id11} value={d.q11o2} onChange={(e) => setPraque11(e.target.value)}/>{d.q11o2}
+                        <input type="radio" name={d.id11} value={d.q11o3} onChange={(e) => setPraque11(e.target.value)}/>{d.q11o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question12}</h2>
+                        <input type="radio" name={d.id12} value={d.q12o1} onChange={(e) => setPraque12(e.target.value)}/>{d.q12o1}
+                        <input type="radio" name={d.id12} value={d.q12o2} onChange={(e) => setPraque12(e.target.value)}/>{d.q12o2}
+                        <input type="radio" name={d.id12} value={d.q12o3} onChange={(e) => setPraque12(e.target.value)}/>{d.q12o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question13}</h2>
+                        <input type="radio" name={d.id13} value={d.q13o1} onChange={(e) => setPraque13(e.target.value)}/>{d.q13o1}
+                        <input type="radio" name={d.id13} value={d.q13o2} onChange={(e) => setPraque13(e.target.value)}/>{d.q13o2}
+                        <input type="radio" name={d.id13} value={d.q13o3} onChange={(e) => setPraque13(e.target.value)}/>{d.q13o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question14}</h2>
+                        <input type="radio" name={d.id14} value={d.q14o1} onChange={(e) => setPraque14(e.target.value)}/>{d.q14o1}
+                        <input type="radio" name={d.id14} value={d.q14o2} onChange={(e) => setPraque14(e.target.value)}/>{d.q14o2}
+                        <input type="radio" name={d.id14} value={d.q14o3} onChange={(e) => setPraque14(e.target.value)}/>{d.q14o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question15}</h2>
+                        <input type="radio" name={d.id15} value={d.q15o1} onChange={(e) => setPraque15(e.target.value)}/>{d.q15o1}
+                        <input type="radio" name={d.id15} value={d.q15o2} onChange={(e) => setPraque15(e.target.value)}/>{d.q15o2}
+                        <input type="radio" name={d.id15} value={d.q15o3} onChange={(e) => setPraque15(e.target.value)}/>{d.q15o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question16}</h2>
+                        <input type="radio" name={d.id16} value={d.q16o1} onChange={(e) => setPraque16(e.target.value)}/>{d.q16o1}
+                        <input type="radio" name={d.id16} value={d.q16o2} onChange={(e) => setPraque16(e.target.value)}/>{d.q16o2}
+                        <input type="radio" name={d.id16} value={d.q16o3} onChange={(e) => setPraque16(e.target.value)}/>{d.q16o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question17}</h2>
+                        <input type="radio" name={d.id17} value={d.q17o1} onChange={(e) => setPraque17(e.target.value)}/>{d.q17o1}
+                        <input type="radio" name={d.id17} value={d.q17o2} onChange={(e) => setPraque17(e.target.value)}/>{d.q17o2}
+                        <input type="radio" name={d.id17} value={d.q17o3} onChange={(e) => setPraque17(e.target.value)}/>{d.q17o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question18}</h2>
+                        <input type="radio" name={d.id18} value={d.q18o1} onChange={(e) => setPraque18(e.target.value)}/>{d.q18o1}
+                        <input type="radio" name={d.id18} value={d.q18o2} onChange={(e) => setPraque18(e.target.value)}/>{d.q18o2}
+                        <input type="radio" name={d.id18} value={d.q18o3} onChange={(e) => setPraque18(e.target.value)}/>{d.q18o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question19}</h2>
+                        <input type="radio" name={d.id19} value={d.q19o1} onChange={(e) => setPraque19(e.target.value)}/>{d.q19o1}
+                        <input type="radio" name={d.id19} value={d.q19o2} onChange={(e) => setPraque19(e.target.value)}/>{d.q19o2}
+                        <input type="radio" name={d.id19} value={d.q19o3} onChange={(e) => setPraque19(e.target.value)}/>{d.q19o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question20}</h2>
+                        <input type="radio" name={d.id20} value={d.q20o1} onChange={(e) => setPraque20(e.target.value)}/>{d.q20o1}
+                        <input type="radio" name={d.id20} value={d.q20o2} onChange={(e) => setPraque20(e.target.value)}/>{d.q20o2}
+                        <input type="radio" name={d.id20} value={d.q20o3} onChange={(e) => setPraque20(e.target.value)}/>{d.q20o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question21}</h2>
+                        <input type="radio" name={d.id21} value={d.q21o1} onChange={(e) => setPraque21(e.target.value)}/>{d.q21o1}
+                        <input type="radio" name={d.id21} value={d.q21o2} onChange={(e) => setPraque21(e.target.value)}/>{d.q21o2}
+                        <input type="radio" name={d.id21} value={d.q21o3} onChange={(e) => setPraque21(e.target.value)}/>{d.q21o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question22}</h2>
+                        <input type="radio" name={d.id22} value={d.q22o1} onChange={(e) => setPraque22(e.target.value)}/>{d.q22o1}
+                        <input type="radio" name={d.id22} value={d.q22o2} onChange={(e) => setPraque22(e.target.value)}/>{d.q22o2}
+                        <input type="radio" name={d.id22} value={d.q22o3} onChange={(e) => setPraque22(e.target.value)}/>{d.q22o3}
+                        
+                        <br/>
+                        
+                        </div>
+
+                        <div className='box_assesment'>
+                        <h2>{d.question23}</h2>
+                        <input type="radio" name={d.id23} value={d.q23o1} onChange={(e) => setPraque23(e.target.value)}/>{d.q23o1}
+                        <input type="radio" name={d.id23} value={d.q23o2} onChange={(e) => setPraque23(e.target.value)}/>{d.q23o2}
+                        <input type="radio" name={d.id23} value={d.q23o3} onChange={(e) => setPraque23(e.target.value)}/>{d.q23o3}
+                        
+                        <br/>
+                        
+                        </div>
