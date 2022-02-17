@@ -46,6 +46,18 @@ const Navigation = () => {
         boxClassSubMenu1.push('');
     }
 
+    const [isMenuSubMenu2, setMenuSubMenu2] = useState(false);
+    const toggleSubmenu2 = () => {
+        setMenuSubMenu2(isMenuSubMenu2 === false ? true : false);
+      };
+
+    let boxClassSubMenu2 = ["sub__menus"];
+    if(isMenuSubMenu2) {
+        boxClassSubMenu2.push('sub__menus__Active');
+    }else {
+        boxClassSubMenu2.push('');
+    }
+
    
 
     return (
@@ -78,7 +90,22 @@ const Navigation = () => {
                     </li>
                     {/* <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`#kyp`}> Know Your Prakriti </NavLink> </li> */}
                     <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Aboutus`}> AboutUs </NavLink> </li>
-                    <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Product </NavLink> </li>
+                    {/* <li className="menu-item " ><NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Product </NavLink> </li> */}
+
+
+
+
+                    <li onClick={toggleSubmenu2} className="menu-item sub__menus__arrows" > <Link to="#"> Shop <FiChevronDown /> </Link>
+                        <ul className={boxClassSubMenu2.join(' ')} > 
+                            <li > <NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Swasthvritta Essentials </NavLink> </li>
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Swasthvritta's Kitchen </NavLink> </li>
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Cart </NavLink> </li>
+                        </ul>
+                    </li>
+
+
+
+
                     <li onClick={toggleSubmenu} className="menu-item sub__menus__arrows" > <Link to="#"> Sign In/Up <FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu.join(' ')} > 
                             {/* <li > <NavLink onClick={toggleClass} activeClassName='is-active'  to={"https://form.jotform.com/213123497958465"}> Register as Doctor </NavLink> </li> */}
