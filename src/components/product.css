@@ -111,6 +111,9 @@ body{
 .new-price span{
     color: #256eff;
 }
+.unavaible{
+    color: #f64749;
+}
 .product-detail h2{
     text-transform: capitalize;
     color: #12263a;
@@ -163,6 +166,8 @@ body{
 }
 .purchase-info .btn:last-of-type{
     background: #f64749;
+    margin-left: 17%;
+    
 }
 .purchase-info .btn:hover{
     opacity: 0.9;

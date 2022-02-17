@@ -75,6 +75,7 @@ export const Product = (props) => {
                 <div className="product-price">
                   <p className="last-price">Old Price: <span>150.00</span></p>
                   <p className="new-price">New Price: <span>₹ 99.00 (Excluding Delivery Charges</span></p>
+                  <p className="unavaible">Out of stock</p>
                 </div>
                 <div className="product-detail">
                   <h2>about this item: </h2>
@@ -97,7 +98,8 @@ export const Product = (props) => {
                   <button type="button" className="btn">
                     Add to Cart <i className="fas fa-shopping-cart" />
                   </button>
-                  <button type="button" className="btn">Compare</button>
+                  <br></br>
+                  <button type="button" className="btn">Buy Now</button>
                 </div>
               </div>
             </div>
