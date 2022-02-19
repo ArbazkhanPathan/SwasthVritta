@@ -1,4 +1,6 @@
 export const Features = (props) => {
+
+  
   return (
     <div id='features' className='text-center'>
       <div className='container'>
@@ -9,9 +11,9 @@ export const Features = (props) => {
 
         <div class="button-effect">
             
-            <a class="effect effect-1" href="#" title="Learn More">Physical Appointments</a>
-            <a class="effect effect-1" href="#" title="Learn More">Video Chats</a>
-            <a class="effect effect-1" href="#" title="Learn More">Voice Calls</a>
+            <a class="effect effect-1" href="https://calendly.com/swasthvrittahealthsolutions/consult-with-ayurvedic-doctors?hide_gdpr_banner=1&month=2022-02" title="Learn More">Physical Appointments</a>
+            <a class="effect effect-1" href="https://calendly.com/swasthvrittahealthsolutions/consult-with-ayurvedic-doctors?hide_gdpr_banner=1&month=2022-02" title="Learn More">Video Chats</a>
+            <a class="effect effect-1" href="https://calendly.com/swasthvrittahealthsolutions/consult-with-ayurvedic-doctors?hide_gdpr_banner=1&month=2022-02" title="Learn More">Voice Calls</a>
           
           </div>
 
