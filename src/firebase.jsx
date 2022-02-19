@@ -1,3 +1,5 @@
+// personal account
+
 import firebase from "firebase";
 
 var firebaseApp = firebase.initializeApp({
@@ -12,6 +14,45 @@ var firebaseApp = firebase.initializeApp({
 var db = firebaseApp.firestore();
 
 export { db };
+
+// Official account
+
+// import firebase from "firebase";
+
+// var firebaseApp = firebase.initializeApp({
+//     apiKey: "AIzaSyBKcL6dPrLUbpVPr3Zi93SMaJpUA2OMxqw",
+//   authDomain: "swasthvritta-c7aca.firebaseapp.com",
+//   projectId: "swasthvritta-c7aca",
+//   storageBucket: "swasthvritta-c7aca.appspot.com",
+//   messagingSenderId: "164759188664",
+//   appId: "1:164759188664:web:e1f75ff9c2076672cd704d",
+//   measurementId: "G-ZL0X46JZJ7"
+// });
+
+// var db = firebaseApp.firestore();
+
+// export { db };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // import { initializeApp } from 'firebase/app';
 // import { collection, getDocs } from 'firebase/firestore/lite';
