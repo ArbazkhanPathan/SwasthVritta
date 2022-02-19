@@ -112,6 +112,9 @@ import "./prakriti.css"
 import React, { useState, useEffect } from "react";
 // export const Prakriti = (props) => {
   const Prakriti1 = (props) => {
+
+
+
         const [fname, setfName] = useState("");
         const [lname, setlName] = useState("");
         const [email, setEmail] = useState("");
@@ -120,6 +123,7 @@ import React, { useState, useEffect } from "react";
         const [mobileno, setMobileno] = useState("");
         const [occupation, setOccupation] = useState("");
         const [address, setAddress] = useState("");
+        const [date, setDate] = useState("");
         const [prakritians, setPrakritians] = useState("");
         const [praque1, setPraque1] = useState("");
         const [praque2, setPraque2] = useState("");
@@ -161,6 +165,7 @@ import React, { useState, useEffect } from "react";
             mobileno: mobileno,
             occupation: occupation,
             address: address,
+            date: date,
             prakritians: prakritians,
             praque1:praque1,
             praque2:praque2,
@@ -197,6 +202,7 @@ import React, { useState, useEffect } from "react";
           setfName("");
           setlName("");
           setEmail("");
+          setDate("");
           setCity("");
           setState("");
           setOccupation("");
@@ -383,27 +389,32 @@ import React, { useState, useEffect } from "react";
             <div id="names">
                 <div className="form-in">
                     <input className="input" type="text" name="fname" id="fname" placeholder="First Name" value={fname}
-                                 onChange={(e) => setfName(e.target.value)}/>
+                                 onChange={(e) => setfName(e.target.value)} required/>
                     <input className="input" type="text" name="lname" id="lname" placeholder="Last Name" value={lname}
-                                 onChange={(e) => setlName(e.target.value)}/>
+                                 onChange={(e) => setlName(e.target.value)} required/>
                 </div>
                 <div>
                     <input type="email" className="w-long input" name="email" id="email" placeholder="Email Address" value={email}
-                                 onChange={(e) => setEmail(e.target.value)} /> 
+                                 onChange={(e) => setEmail(e.target.value)} required/> 
+                </div>
+                <div>
+                    <label>Today Date:- </label>
+                    <input type="date" className="input" name="date" id="date" placeholder="date" value={date}
+                                 onChange={(e) => setDate(e.target.value)} required/> 
                 </div>
                 <div className="form-in">
                    <input className="input" type="text" name="address" id="city" placeholder="City" value={city}
-                                 onChange={(e) => setCity(e.target.value)}/> 
+                                 onChange={(e) => setCity(e.target.value)} required/> 
                    <input className="input" type="text" name="address" id="state" placeholder="State" value={state}
-                                 onChange={(e) => setState(e.target.value)}/> 
+                                 onChange={(e) => setState(e.target.value)} required/> 
                 </div>
                 <div>
                    <input className="input w-long" type="drop"  name="phno" id="phno" placeholder="Mobile Number"value={mobileno}
-                                 onChange={(e) => setMobileno(e.target.value)} /> 
+                                 onChange={(e) => setMobileno(e.target.value)} required/> 
                 </div>
                 <div>
-                   <select className="w-long input" id="occupation" placeholder="" value={occupation}
-                                 onChange={(e) => setOccupation(e.target.value)}>
+                   <select className="w-long input" id="occupation" placeholder="Choose your occupation" value={occupation}
+                                 onChange={(e) => setOccupation(e.target.value)} required>
                        <option>Student</option>
                        <option>Employee</option>
                        <option>House Wife</option>
@@ -412,7 +423,7 @@ import React, { useState, useEffect } from "react";
                 </div>
                 <div>
                    <input type="text" className="w-long input" name="address" id="address" placeholder="Address" value={address}
-                                 onChange={(e) => setAddress(e.target.value)}/> 
+                                 onChange={(e) => setAddress(e.target.value)} required/> 
                 </div>
                 {/* <input className="w-long input" type="file" name="photo" id="photo" placeholder="Upload you photo" /> */}
                 
@@ -434,84 +445,84 @@ import React, { useState, useEffect } from "react";
                         <button>{d.option3}</button> */}
 
                         <h2>1. Select your Physique type..</h2>
-                        <input type="radio" name="q1" value="A)Thin" onChange={(e) =>  setPraque1(e.target.value)}/>A)Thin
-                        <input type="radio" name="q1" value="B)Medium" onChange={(e) =>  setPraque1(e.target.value)}/>B)Medium
-                        <input type="radio" name="q1" value="C)Heavy" onChange={(e) =>  setPraque1(e.target.value)}/>C)Heavy
+                        <input type="radio" name="q1" value="A)Thin" onChange={(e) =>  setPraque1(e.target.value)} required/>A)Thin
+                        <input type="radio" name="q1" value="B)Medium" onChange={(e) =>  setPraque1(e.target.value)} required/>B)Medium
+                        <input type="radio" name="q1" value="C)Heavy" onChange={(e) =>  setPraque1(e.target.value)} required/>C)Heavy
                         <br/>
                         
 
                         <h2>2. Are you good at adapting and mixing with a variety of people</h2>
-                        <input type="radio" name="q2" value="A)Sometimes" onChange={(e) =>  setPraque2(e.target.value)}/>A)Sometimes
+                        <input type="radio" name="q2" value="A)Sometimes" onChange={(e) =>  setPraque2(e.target.value)} required/>A)Sometimes
                         <input type="radio" name="q2" value="B)Yes, almost Times" onChange={(e) =>  setPraque2(e.target.value)}/>B)Yes, almost Times
                         <input type="radio" name="q2" value="C)Many Times" onChange={(e) =>  setPraque2(e.target.value)}/>C)Many Times
                         <br/>
                         
 
                         <h2>3. Select your skin type</h2>
-                        <input type="radio" name="q3" value="A)Dry and Rough" onChange={(e) =>  setPraque3(e.target.value)}/>A)Dry and Rough
+                        <input type="radio" name="q3" value="A)Dry and Rough" onChange={(e) =>  setPraque3(e.target.value)} required/>A)Dry and Rough
                         <input type="radio" name="q3" value="B)Smooth" onChange={(e) =>  setPraque3(e.target.value)}/>B)Smooth
                         <input type="radio" name="q3" value="C)Oily" onChange={(e) =>  setPraque3(e.target.value)}/>C)Oily
                         <br/>
                         
 
                         <h2>4. Are your veins visible on skin</h2>
-                        <input type="radio" name="q4" value="A)Visible (if veins are visible on hands and feet)" onChange={(e) =>  setPraque4(e.target.value)}/>A)Visible (if veins are visible on hands and feet)
+                        <input type="radio" name="q4" value="A)Visible (if veins are visible on hands and feet)" onChange={(e) =>  setPraque4(e.target.value)} required/>A)Visible (if veins are visible on hands and feet)
                         <input type="radio" name="q4" value="B)Fairly Visible (if veins become visible on effort)" onChange={(e) =>  setPraque4(e.target.value)}/>B)Fairly Visible (if veins become visible on effort)
                         <input type="radio" name="q4" value="C)Not visible (If veins not visible even on effort)" onChange={(e) =>  setPraque4(e.target.value)}/>C)Not visible (If veins not visible even on effort)
                         <br/>
                         
 
                         <h2>5.How is your Voice/Speech?</h2>
-                        <input type="radio" name="q5" value="A)Low Pitch and fast" onChange={(e) =>  setPraque5(e.target.value)}/>A)Low Pitch and fast
+                        <input type="radio" name="q5" value="A)Low Pitch and fast" onChange={(e) =>  setPraque5(e.target.value)} required/>A)Low Pitch and fast
                         <input type="radio" name="q5" value="B)High Pitch" onChange={(e) =>  setPraque5(e.target.value)}/>B)High Pitch
                         <input type="radio" name="q5" value="C)Slow  Speech and deep voice" onChange={(e) =>  setPraque5(e.target.value)}/>C)Slow  Speech and deep voice
                         <br/>
                         
 
                         <h2>6.When anxious/Tensed, do you know the reason?</h2>
-                        <input type="radio" name="q6" value="A)Rarely" onChange={(e) =>  setPraque6(e.target.value)}/>A)Rarely
+                        <input type="radio" name="q6" value="A)Rarely" onChange={(e) =>  setPraque6(e.target.value)} required/>A)Rarely
                         <input type="radio" name="q6" value="B)Sometimes" onChange={(e) =>  setPraque6(e.target.value)}/>B)Sometimes
                         <input type="radio" name="q6" value="C)Yes, often" onChange={(e) =>  setPraque6(e.target.value)}/>C)Yes, often
                         <br/>
                         
 
                         <h2>7.What’s your eye size?</h2>
-                        <input type="radio" name="q7" value="A)Small" onChange={(e) =>  setPraque7(e.target.value)}/>A)Small
+                        <input type="radio" name="q7" value="A)Small" onChange={(e) =>  setPraque7(e.target.value)} required/>A)Small
                         <input type="radio" name="q7" value="B)Smooth" onChange={(e) =>  setPraque7(e.target.value)}/>B)Medium
                         <input type="radio" name="q7" value="C)Large" onChange={(e) =>  setPraque7(e.target.value)}/>C)Large
                         <br/>
                         
 
                         <h2>8.Select your type of walk</h2>
-                        <input type="radio" name="q8" value="A)Swift" onChange={(e) =>  setPraque8(e.target.value)}/>A)Swift
+                        <input type="radio" name="q8" value="A)Swift" onChange={(e) =>  setPraque8(e.target.value)} required/>A)Swift
                         <input type="radio" name="q8" value="B)Smooth" onChange={(e) =>  setPraque8(e.target.value)}/>B)Smooth
                         <input type="radio" name="q8" value="C)Slow" onChange={(e) =>  setPraque8(e.target.value)}/>C)Slow
                         <br/>
                         
 
                         <h2>9.How is your Thirst?</h2>
-                        <input type="radio" name="q9" value="A)Variable" onChange={(e) =>  setPraque9(e.target.value)}/>A)Variable
+                        <input type="radio" name="q9" value="A)Variable" onChange={(e) =>  setPraque9(e.target.value)} required/>A)Variable
                         <input type="radio" name="q9" value="B)Excessive" onChange={(e) =>  setPraque9(e.target.value)}/>B)Excessive
                         <input type="radio" name="q9" value="C)Less" onChange={(e) =>  setPraque9(e.target.value)}/>C)Less
                         <br/>
                         
 
                         <h2>10.How are your Bowel Habits?</h2>
-                        <input type="radio" name="q10" value="A)Constipated Stools " onChange={(e) =>  setPraque10(e.target.value)}/>A)Constipated Stools 
+                        <input type="radio" name="q10" value="A)Constipated Stools " onChange={(e) =>  setPraque10(e.target.value)} required/>A)Constipated Stools 
                         <input type="radio" name="q10" value="B)Regulaar" onChange={(e) =>  setPraque10(e.target.value)}/>B)Regular
                         <input type="radio" name="q10" value="C)Sluggish Stools" onChange={(e) =>  setPraque10(e.target.value)}/>C)Sluggish Stools
                         <br/>
                         
 
                         <h2>11.Select your hair type</h2>
-                        <input type="radio" name="q11" value="A)Rough and Hard" onChange={(e) =>  setPraque11(e.target.value)}/>A)Rough and Hard
+                        <input type="radio" name="q11" value="A)Rough and Hard" onChange={(e) =>  setPraque11(e.target.value)} required/>A)Rough and Hard
                         <input type="radio" name="q11" value="B)Medium" onChange={(e) =>  setPraque11(e.target.value)}/>B)Medium
                         <input type="radio" name="q11" value="C)Soft & Smooth" onChange={(e) =>  setPraque11(e.target.value)}/>C)Soft & Smooth
                         <br/>
                         
 
                         <h2>12.How’s Your Appetite?</h2>
-                        <input type="radio" name="q12" value="A)Variable (Sometimes Heavy Diet & Sometimes Less Diet)" onChange={(e) =>  setPraque12(e.target.value)}/>A)Variable (Sometimes Heavy Diet & Sometimes Less Diet)
+                        <input type="radio" name="q12" value="A)Variable (Sometimes Heavy Diet & Sometimes Less Diet)" onChange={(e) =>  setPraque12(e.target.value)} required/>A)Variable (Sometimes Heavy Diet & Sometimes Less Diet)
                         <input type="radio" name="q12" value="B)Heavy (Heavy Diets & Many meals)" onChange={(e) =>  setPraque12(e.target.value)}/>B)Heavy (Heavy Diets & Many meals)
                         <input type="radio" name="q12" value="C)Less and Regular (Less Diet & Regular Meals)" onChange={(e) =>  setPraque12(e.target.value)}/>C)Less and Regular (Less Diet & Regular Meals)
                         <br/>
@@ -521,76 +532,76 @@ import React, { useState, useEffect } from "react";
                         
 
                         <h2>13.Are you comfortable owning to your mistakes.</h2>
-                        <input type="radio" name="q13" value="A)Sometimes" onChange={(e) =>  setPraque13(e.target.value)}/>A)Sometimes
+                        <input type="radio" name="q13" value="A)Sometimes" onChange={(e) =>  setPraque13(e.target.value)} required/>A)Sometimes
                         <input type="radio" name="q13" value="B)Quite Rarely" onChange={(e) =>  setPraque13(e.target.value)}/>B)Quite Rarely
                         <input type="radio" name="q13" value="C)Yes, Often" onChange={(e) =>  setPraque13(e.target.value)}/>C)Yes, Often
                         <br/>
                         
 
                         <h2>14.How are your Eating Habits?</h2>
-                        <input type="radio" name="q14" value="A)Quick Eating" onChange={(e) =>  setPraque14(e.target.value)}/>A)Quick Eating
+                        <input type="radio" name="q14" value="A)Quick Eating" onChange={(e) =>  setPraque14(e.target.value)} required/>A)Quick Eating
                         <input type="radio" name="q14" value="B)Many Meals" onChange={(e) =>  setPraque14(e.target.value)}/>B)Many Meals
                         <input type="radio" name="q14" value="C)Slow Eating" onChange={(e) =>  setPraque14(e.target.value)}/>C)Slow Eating
                         <br/>
                         
 
                         <h2>15.How are your Sleep Habits?</h2>
-                        <input type="radio" name="q15" value="A)Disturbed" onChange={(e) =>  setPraque15(e.target.value)}/>A)Disturbed
+                        <input type="radio" name="q15" value="A)Disturbed" onChange={(e) =>  setPraque15(e.target.value)} required/>A)Disturbed
                         <input type="radio" name="q15" value="B)Moderate" onChange={(e) =>  setPraque15(e.target.value)}/>B)Moderate
                         <input type="radio" name="q15" value="C)Sound & Deep" onChange={(e) =>  setPraque15(e.target.value)}/>C)Sound & Deep
                         <br/>
                         
 
                         <h2>16.Do you recognize when you are stressed, and can kep calm and resort to solution.</h2>
-                        <input type="radio" name="q16" value="A)Very rarely" onChange={(e) =>  setPraque16(e.target.value)}/>A)very rarely
+                        <input type="radio" name="q16" value="A)Very rarely" onChange={(e) =>  setPraque16(e.target.value)}required/>A)very rarely
                         <input type="radio" name="q16" value="B)Sometimes" onChange={(e) =>  setPraque16(e.target.value)}/>B)Sometimes
                         <input type="radio" name="q16" value="C)Yes, Often" onChange={(e) =>  setPraque16(e.target.value)}/>C)Yes, Often
                         <br/>
 
                         <h2>17.Your Sweating Patterns</h2>
-                        <input type="radio" name="q17" value="A)Very Less" onChange={(e) =>  setPraque17(e.target.value)}/>A)Very Less
+                        <input type="radio" name="q17" value="A)Very Less" onChange={(e) =>  setPraque17(e.target.value)} required/>A)Very Less
                         <input type="radio" name="q17" value="B)Excessive" onChange={(e) =>  setPraque17(e.target.value)}/>B)Excessive
                         <input type="radio" name="q17" value="C)Rarely" onChange={(e) =>  setPraque17(e.target.value)}/>C)Rarely
                         <br/>
                         
 
                         <h2>18.Frequency of disease</h2>
-                        <input type="radio" name="q18" value="A)Frequently" onChange={(e) =>  setPraque18(e.target.value)}/>A)Frequently
+                        <input type="radio" name="q18" value="A)Frequently" onChange={(e) =>  setPraque18(e.target.value)} required/>A)Frequently
                         <input type="radio" name="q18" value="B)Moderately" onChange={(e) =>  setPraque18(e.target.value)}/>B)Moderately
                         <input type="radio" name="q18" value="C)Rarely" onChange={(e) =>  setPraque18(e.target.value)}/>C)Rarely
                         <br/>
                         
 
                         <h2>19.Do You recognize when You are Angry, and are you able to avoid losing my temper ?</h2>
-                        <input type="radio" name="q19" value="A)Very rarely" onChange={(e) =>  setPraque19(e.target.value)}/>A)Very rarely
+                        <input type="radio" name="q19" value="A)Very rarely" onChange={(e) =>  setPraque19(e.target.value)} required/>A)Very rarely
                         <input type="radio" name="q19" value="B)Sometimes" onChange={(e) =>  setPraque19(e.target.value)}/>B)Sometimes
                         <input type="radio" name="q19" value="C)Yes, Often" onChange={(e) =>  setPraque19(e.target.value)}/>C)Yes, Often
                         <br/>
                         
 
                         <h2>20.Are you talkative?</h2>
-                        <input type="radio" name="q20" value="A)Talkative" onChange={(e) =>  setPraque20(e.target.value)}/>A)Talkative 
+                        <input type="radio" name="q20" value="A)Talkative" onChange={(e) =>  setPraque20(e.target.value)} required/>A)Talkative 
                         <input type="radio" name="q20" value="B)Like to gossip" onChange={(e) =>  setPraque20(e.target.value)}/>B)Like to gossip
                         <input type="radio" name="q20" value="C)To the point talk" onChange={(e) =>  setPraque20(e.target.value)}/>C)To the point talk
                         <br/>
                         
 
                         <h2>21.Your physical Activity Level</h2>
-                        <input type="radio" name="q21" value="A)Hyperactive" onChange={(e) =>  setPraque21(e.target.value)}/>A)Hyperactive
+                        <input type="radio" name="q21" value="A)Hyperactive" onChange={(e) =>  setPraque21(e.target.value)}required/>A)Hyperactive
                         <input type="radio" name="q21" value="B)Moderately Active" onChange={(e) =>  setPraque21(e.target.value)}/>B)Moderately Active
                         <input type="radio" name="q21" value="C)Less Active" onChange={(e) =>  setPraque21(e.target.value)}/>C)Less Active
                         <br/>
                         
 
                         <h2>22.Do You take initiative and are highly motivated, even when You don’t feel like doing something ?</h2>
-                        <input type="radio" name="q22" value="A)Yes, Usally" onChange={(e) =>  setPraque22(e.target.value)}/>A)Yes, Usally
+                        <input type="radio" name="q22" value="A)Yes, Usally" onChange={(e) =>  setPraque22(e.target.value)} required/>A)Yes, Usally
                         <input type="radio" name="q22" value="B)Sometimes" onChange={(e) =>  setPraque22(e.target.value)}/>B)Sometimes
                         <input type="radio" name="q22" value="C)Rarely" onChange={(e) =>  setPraque22(e.target.value)}/>C)Rarely
                         <br/>
                         
 
                         <h2>23.When under pressure, are you able to think clearly and stay focused</h2>
-                        <input type="radio" name="q23" value="A)Very rarely" onChange={(e) =>  setPraque23(e.target.value)}/>A)Very rarely
+                        <input type="radio" name="q23" value="A)Very rarely" onChange={(e) =>  setPraque23(e.target.value)} required/>A)Very rarely
                         <input type="radio" name="q23" value="B)Sometimes" onChange={(e) =>  setPraque23(e.target.value)}/>B)Sometimes
                         <input type="radio" name="q23" value="C)Yes, Often" onChange={(e) =>  setPraque23(e.target.value)}/>C)Yes, Often
                         <br/>
