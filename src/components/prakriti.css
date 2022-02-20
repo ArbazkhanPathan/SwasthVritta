@@ -160,13 +160,21 @@ label{
 .box_assesment h2{
     font-size: 20px;
 }
-.box_assesment button{
+#submit-btn{
     background-color: black;
     color: white;
     padding: 1rem;
     border-radius: 10px;
     margin-left: 15px;
     border: none;
+}
+
+.box_assesment div{
+    display: flex;
+}
+
+.box_assesment input{
+    margin-right: 4px;
 }
 
 

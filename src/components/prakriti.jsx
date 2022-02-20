@@ -445,86 +445,86 @@ import React, { useState, useEffect } from "react";
                         <button>{d.option3}</button> */}
 
                         <h2>1. Select your Physique type..</h2>
-                        <input type="radio" name="q1" value="A)Thin" onChange={(e) =>  setPraque1(e.target.value)} required/>A)Thin
-                        <input type="radio" name="q1" value="B)Medium" onChange={(e) =>  setPraque1(e.target.value)} required/>B)Medium
-                        <input type="radio" name="q1" value="C)Heavy" onChange={(e) =>  setPraque1(e.target.value)} required/>C)Heavy
+                        <div className="option_box" ><input type="radio" name="q1" value="A)Thin" onChange={(e) =>  setPraque1(e.target.value)} required/>A)Thin</div>
+                        <div className="option_box" ><input type="radio" name="q1" value="B)Medium" onChange={(e) =>  setPraque1(e.target.value)} required/>B)Medium</div>
+                        <div className="option_box" ><input type="radio" name="q1" value="C)Heavy" onChange={(e) =>  setPraque1(e.target.value)} required/>C)Heavy</div>
                         <br/>
                         
 
                         <h2>2. Are you good at adapting and mixing with a variety of people</h2>
-                        <input type="radio" name="q2" value="A)Sometimes" onChange={(e) =>  setPraque2(e.target.value)} required/>A)Sometimes
-                        <input type="radio" name="q2" value="B)Yes, almost Times" onChange={(e) =>  setPraque2(e.target.value)}/>B)Yes, almost Times
-                        <input type="radio" name="q2" value="C)Many Times" onChange={(e) =>  setPraque2(e.target.value)}/>C)Many Times
+                        <div className="option_box" ><input type="radio" name="q2" value="A)Sometimes" onChange={(e) =>  setPraque2(e.target.value)} required/>A)Sometimes</div>
+                        <div className="option_box" ><input type="radio" name="q2" value="B)Yes, almost Times" onChange={(e) =>  setPraque2(e.target.value)}/>B)Yes, almost Times</div>
+                        <div className="option_box" ><input type="radio" name="q2" value="C)Many Times" onChange={(e) =>  setPraque2(e.target.value)}/>C)Many Times</div>
                         <br/>
                         
 
                         <h2>3. Select your skin type</h2>
-                        <input type="radio" name="q3" value="A)Dry and Rough" onChange={(e) =>  setPraque3(e.target.value)} required/>A)Dry and Rough
-                        <input type="radio" name="q3" value="B)Smooth" onChange={(e) =>  setPraque3(e.target.value)}/>B)Smooth
-                        <input type="radio" name="q3" value="C)Oily" onChange={(e) =>  setPraque3(e.target.value)}/>C)Oily
+                        <div className="option_box" ><input type="radio" name="q3" value="A)Dry and Rough" onChange={(e) =>  setPraque3(e.target.value)} required/>A)Dry and Rough</div>
+                        <div className="option_box" ><input type="radio" name="q3" value="B)Smooth" onChange={(e) =>  setPraque3(e.target.value)}/>B)Smooth</div>
+                        <div className="option_box" ><input type="radio" name="q3" value="C)Oily" onChange={(e) =>  setPraque3(e.target.value)}/>C)Oily</div>
                         <br/>
                         
 
                         <h2>4. Are your veins visible on skin</h2>
-                        <input type="radio" name="q4" value="A)Visible (if veins are visible on hands and feet)" onChange={(e) =>  setPraque4(e.target.value)} required/>A)Visible (if veins are visible on hands and feet)
-                        <input type="radio" name="q4" value="B)Fairly Visible (if veins become visible on effort)" onChange={(e) =>  setPraque4(e.target.value)}/>B)Fairly Visible (if veins become visible on effort)
-                        <input type="radio" name="q4" value="C)Not visible (If veins not visible even on effort)" onChange={(e) =>  setPraque4(e.target.value)}/>C)Not visible (If veins not visible even on effort)
+                        <div className="option_box" ><input type="radio" name="q4" value="A)Visible (if veins are visible on hands and feet)" onChange={(e) =>  setPraque4(e.target.value)} required/>A)Visible (if veins are visible on hands and feet)</div>
+                        <div className="option_box" ><input type="radio" name="q4" value="B)Fairly Visible (if veins become visible on effort)" onChange={(e) =>  setPraque4(e.target.value)}/>B)Fairly Visible (if veins become visible on effort)</div>
+                        <div className="option_box" ><input type="radio" name="q4" value="C)Not visible (If veins not visible even on effort)" onChange={(e) =>  setPraque4(e.target.value)}/>C)Not visible (If veins not visible even on effort)</div>
                         <br/>
                         
 
                         <h2>5.How is your Voice/Speech?</h2>
-                        <input type="radio" name="q5" value="A)Low Pitch and fast" onChange={(e) =>  setPraque5(e.target.value)} required/>A)Low Pitch and fast
-                        <input type="radio" name="q5" value="B)High Pitch" onChange={(e) =>  setPraque5(e.target.value)}/>B)High Pitch
-                        <input type="radio" name="q5" value="C)Slow  Speech and deep voice" onChange={(e) =>  setPraque5(e.target.value)}/>C)Slow  Speech and deep voice
+                        <div className="option_box" ><input type="radio" name="q5" value="A)Low Pitch and fast" onChange={(e) =>  setPraque5(e.target.value)} required/>A)Low Pitch and fast</div>
+                        <div className="option_box" ><input type="radio" name="q5" value="B)High Pitch" onChange={(e) =>  setPraque5(e.target.value)}/>B)High Pitch</div>
+                        <div className="option_box" ><input type="radio" name="q5" value="C)Slow  Speech and deep voice" onChange={(e) =>  setPraque5(e.target.value)}/>C)Slow  Speech and deep voice</div>
                         <br/>
                         
 
                         <h2>6.When anxious/Tensed, do you know the reason?</h2>
-                        <input type="radio" name="q6" value="A)Rarely" onChange={(e) =>  setPraque6(e.target.value)} required/>A)Rarely
-                        <input type="radio" name="q6" value="B)Sometimes" onChange={(e) =>  setPraque6(e.target.value)}/>B)Sometimes
-                        <input type="radio" name="q6" value="C)Yes, often" onChange={(e) =>  setPraque6(e.target.value)}/>C)Yes, often
+                        <div className="option_box" ><input type="radio" name="q6" value="A)Rarely" onChange={(e) =>  setPraque6(e.target.value)} required/>A)Rarely</div>
+                        <div className="option_box" ><input type="radio" name="q6" value="B)Sometimes" onChange={(e) =>  setPraque6(e.target.value)}/>B)Sometimes</div>
+                        <div className="option_box" ><input type="radio" name="q6" value="C)Yes, often" onChange={(e) =>  setPraque6(e.target.value)}/>C)Yes, often</div>
                         <br/>
                         
 
                         <h2>7.What’s your eye size?</h2>
-                        <input type="radio" name="q7" value="A)Small" onChange={(e) =>  setPraque7(e.target.value)} required/>A)Small
-                        <input type="radio" name="q7" value="B)Smooth" onChange={(e) =>  setPraque7(e.target.value)}/>B)Medium
-                        <input type="radio" name="q7" value="C)Large" onChange={(e) =>  setPraque7(e.target.value)}/>C)Large
+                        <div className="option_box" ><input type="radio" name="q7" value="A)Small" onChange={(e) =>  setPraque7(e.target.value)} required/>A)Small</div>
+                        <div className="option_box" ><input type="radio" name="q7" value="B)Smooth" onChange={(e) =>  setPraque7(e.target.value)}/>B)Medium</div>
+                        <div className="option_box" ><input type="radio" name="q7" value="C)Large" onChange={(e) =>  setPraque7(e.target.value)}/>C)Large</div>
                         <br/>
                         
 
                         <h2>8.Select your type of walk</h2>
-                        <input type="radio" name="q8" value="A)Swift" onChange={(e) =>  setPraque8(e.target.value)} required/>A)Swift
-                        <input type="radio" name="q8" value="B)Smooth" onChange={(e) =>  setPraque8(e.target.value)}/>B)Smooth
-                        <input type="radio" name="q8" value="C)Slow" onChange={(e) =>  setPraque8(e.target.value)}/>C)Slow
+                        <div className="option_box" ><input type="radio" name="q8" value="A)Swift" onChange={(e) =>  setPraque8(e.target.value)} required/>A)Swift</div>
+                        <div className="option_box" ><input type="radio" name="q8" value="B)Smooth" onChange={(e) =>  setPraque8(e.target.value)}/>B)Smooth</div>
+                        <div className="option_box" ><input type="radio" name="q8" value="C)Slow" onChange={(e) =>  setPraque8(e.target.value)}/>C)Slow</div>
                         <br/>
                         
 
                         <h2>9.How is your Thirst?</h2>
-                        <input type="radio" name="q9" value="A)Variable" onChange={(e) =>  setPraque9(e.target.value)} required/>A)Variable
-                        <input type="radio" name="q9" value="B)Excessive" onChange={(e) =>  setPraque9(e.target.value)}/>B)Excessive
-                        <input type="radio" name="q9" value="C)Less" onChange={(e) =>  setPraque9(e.target.value)}/>C)Less
+                        <div className="option_box" ><input type="radio" name="q9" value="A)Variable" onChange={(e) =>  setPraque9(e.target.value)} required/>A)Variable</div>
+                        <div className="option_box" ><input type="radio" name="q9" value="B)Excessive" onChange={(e) =>  setPraque9(e.target.value)}/>B)Excessive</div>
+                        <div className="option_box" ><input type="radio" name="q9" value="C)Less" onChange={(e) =>  setPraque9(e.target.value)}/>C)Less</div>
                         <br/>
                         
 
                         <h2>10.How are your Bowel Habits?</h2>
-                        <input type="radio" name="q10" value="A)Constipated Stools " onChange={(e) =>  setPraque10(e.target.value)} required/>A)Constipated Stools 
-                        <input type="radio" name="q10" value="B)Regulaar" onChange={(e) =>  setPraque10(e.target.value)}/>B)Regular
-                        <input type="radio" name="q10" value="C)Sluggish Stools" onChange={(e) =>  setPraque10(e.target.value)}/>C)Sluggish Stools
+                        <div className="option_box" ><input type="radio" name="q10" value="A)Constipated Stools " onChange={(e) =>  setPraque10(e.target.value)} required/>A)Constipated Stools </div>
+                        <div className="option_box" ><input type="radio" name="q10" value="B)Regulaar" onChange={(e) =>  setPraque10(e.target.value)}/>B)Regular</div>
+                        <div className="option_box" ><input type="radio" name="q10" value="C)Sluggish Stools" onChange={(e) =>  setPraque10(e.target.value)}/>C)Sluggish Stools</div>
                         <br/>
                         
 
                         <h2>11.Select your hair type</h2>
-                        <input type="radio" name="q11" value="A)Rough and Hard" onChange={(e) =>  setPraque11(e.target.value)} required/>A)Rough and Hard
-                        <input type="radio" name="q11" value="B)Medium" onChange={(e) =>  setPraque11(e.target.value)}/>B)Medium
-                        <input type="radio" name="q11" value="C)Soft & Smooth" onChange={(e) =>  setPraque11(e.target.value)}/>C)Soft & Smooth
+                        <div className="option_box" ><input type="radio" name="q11" value="A)Rough and Hard" onChange={(e) =>  setPraque11(e.target.value)} required/>A)Rough and Hard</div>
+                        <div className="option_box" ><input type="radio" name="q11" value="B)Medium" onChange={(e) =>  setPraque11(e.target.value)}/>B)Medium</div>
+                        <div className="option_box" ><input type="radio" name="q11" value="C)Soft & Smooth" onChange={(e) =>  setPraque11(e.target.value)}/>C)Soft & Smooth</div>
                         <br/>
                         
 
                         <h2>12.How’s Your Appetite?</h2>
-                        <input type="radio" name="q12" value="A)Variable (Sometimes Heavy Diet & Sometimes Less Diet)" onChange={(e) =>  setPraque12(e.target.value)} required/>A)Variable (Sometimes Heavy Diet & Sometimes Less Diet)
-                        <input type="radio" name="q12" value="B)Heavy (Heavy Diets & Many meals)" onChange={(e) =>  setPraque12(e.target.value)}/>B)Heavy (Heavy Diets & Many meals)
-                        <input type="radio" name="q12" value="C)Less and Regular (Less Diet & Regular Meals)" onChange={(e) =>  setPraque12(e.target.value)}/>C)Less and Regular (Less Diet & Regular Meals)
+                        <div className="option_box" ><input type="radio" name="q12" value="A)Variable (Sometimes Heavy Diet & Sometimes Less Diet)" onChange={(e) =>  setPraque12(e.target.value)} required/>A)Variable (Sometimes Heavy Diet & Sometimes Less Diet)</div>
+                        <div className="option_box" ><input type="radio" name="q12" value="B)Heavy (Heavy Diets & Many meals)" onChange={(e) =>  setPraque12(e.target.value)}/>B)Heavy (Heavy Diets & Many meals)</div>
+                        <div className="option_box" ><input type="radio" name="q12" value="C)Less and Regular (Less Diet & Regular Meals)" onChange={(e) =>  setPraque12(e.target.value)}/>C)Less and Regular (Less Diet & Regular Meals)</div>
                         <br/>
                         
 
@@ -532,78 +532,78 @@ import React, { useState, useEffect } from "react";
                         
 
                         <h2>13.Are you comfortable owning to your mistakes.</h2>
-                        <input type="radio" name="q13" value="A)Sometimes" onChange={(e) =>  setPraque13(e.target.value)} required/>A)Sometimes
-                        <input type="radio" name="q13" value="B)Quite Rarely" onChange={(e) =>  setPraque13(e.target.value)}/>B)Quite Rarely
-                        <input type="radio" name="q13" value="C)Yes, Often" onChange={(e) =>  setPraque13(e.target.value)}/>C)Yes, Often
+                        <div className="option_box" ><input type="radio" name="q13" value="A)Sometimes" onChange={(e) =>  setPraque13(e.target.value)} required/><p>A)Sometimes</p></div>
+                        <div className="option_box" ><input type="radio" name="q13" value="B)Quite Rarely" onChange={(e) =>  setPraque13(e.target.value)}/><p>B)Quite Rarely</p></div>
+                        <div className="option_box" ><input type="radio" name="q13" value="C)Yes, Often" onChange={(e) =>  setPraque13(e.target.value)}/><p>C)Yes, Often</p></div>
                         <br/>
                         
 
                         <h2>14.How are your Eating Habits?</h2>
-                        <input type="radio" name="q14" value="A)Quick Eating" onChange={(e) =>  setPraque14(e.target.value)} required/>A)Quick Eating
-                        <input type="radio" name="q14" value="B)Many Meals" onChange={(e) =>  setPraque14(e.target.value)}/>B)Many Meals
-                        <input type="radio" name="q14" value="C)Slow Eating" onChange={(e) =>  setPraque14(e.target.value)}/>C)Slow Eating
+                        <div className="option_box" ><input type="radio" name="q14" value="A)Quick Eating" onChange={(e) =>  setPraque14(e.target.value)} required/><p>A)Quick Eating</p></div>
+                        <div className="option_box" ><input type="radio" name="q14" value="B)Many Meals" onChange={(e) =>  setPraque14(e.target.value)}/><p>B)Many Meals</p></div>
+                        <div className="option_box" ><input type="radio" name="q14" value="C)Slow Eating" onChange={(e) =>  setPraque14(e.target.value)}/><p>C)Slow Eating</p></div>
                         <br/>
                         
 
                         <h2>15.How are your Sleep Habits?</h2>
-                        <input type="radio" name="q15" value="A)Disturbed" onChange={(e) =>  setPraque15(e.target.value)} required/>A)Disturbed
-                        <input type="radio" name="q15" value="B)Moderate" onChange={(e) =>  setPraque15(e.target.value)}/>B)Moderate
-                        <input type="radio" name="q15" value="C)Sound & Deep" onChange={(e) =>  setPraque15(e.target.value)}/>C)Sound & Deep
+                        <div className="option_box" ><input type="radio" name="q15" value="A)Disturbed" onChange={(e) =>  setPraque15(e.target.value)} required/><p>A)Disturbed</p></div>
+                        <div className="option_box" ><input type="radio" name="q15" value="B)Moderate" onChange={(e) =>  setPraque15(e.target.value)}/><p>B)Moderate</p></div>
+                        <div className="option_box" ><input type="radio" name="q15" value="C)Sound & Deep" onChange={(e) =>  setPraque15(e.target.value)}/><p>C)Sound & Deep</p></div>
                         <br/>
                         
 
                         <h2>16.Do you recognize when you are stressed, and can kep calm and resort to solution.</h2>
-                        <input type="radio" name="q16" value="A)Very rarely" onChange={(e) =>  setPraque16(e.target.value)}required/>A)very rarely
-                        <input type="radio" name="q16" value="B)Sometimes" onChange={(e) =>  setPraque16(e.target.value)}/>B)Sometimes
-                        <input type="radio" name="q16" value="C)Yes, Often" onChange={(e) =>  setPraque16(e.target.value)}/>C)Yes, Often
+                        <div className="option_box" ><input type="radio" name="q16" value="A)Very rarely" onChange={(e) =>  setPraque16(e.target.value)}required/><p>A)very rarely</p></div>
+                        <div className="option_box" ><input type="radio" name="q16" value="B)Sometimes" onChange={(e) =>  setPraque16(e.target.value)}/><p>B)Sometimes</p></div>
+                        <div className="option_box" ><input type="radio" name="q16" value="C)Yes, Often" onChange={(e) =>  setPraque16(e.target.value)}/><p>C)Yes, Often</p></div>
                         <br/>
 
                         <h2>17.Your Sweating Patterns</h2>
-                        <input type="radio" name="q17" value="A)Very Less" onChange={(e) =>  setPraque17(e.target.value)} required/>A)Very Less
-                        <input type="radio" name="q17" value="B)Excessive" onChange={(e) =>  setPraque17(e.target.value)}/>B)Excessive
-                        <input type="radio" name="q17" value="C)Rarely" onChange={(e) =>  setPraque17(e.target.value)}/>C)Rarely
+                        <div className="option_box" ><input type="radio" name="q17" value="A)Very Less" onChange={(e) =>  setPraque17(e.target.value)} required/><p>A)Very Less</p></div>
+                        <div className="option_box" ><input type="radio" name="q17" value="B)Excessive" onChange={(e) =>  setPraque17(e.target.value)}/><p>B)Excessive</p></div>
+                        <div className="option_box" ><input type="radio" name="q17" value="C)Rarely" onChange={(e) =>  setPraque17(e.target.value)}/><p>C)Rarely</p></div>
                         <br/>
                         
 
                         <h2>18.Frequency of disease</h2>
-                        <input type="radio" name="q18" value="A)Frequently" onChange={(e) =>  setPraque18(e.target.value)} required/>A)Frequently
-                        <input type="radio" name="q18" value="B)Moderately" onChange={(e) =>  setPraque18(e.target.value)}/>B)Moderately
-                        <input type="radio" name="q18" value="C)Rarely" onChange={(e) =>  setPraque18(e.target.value)}/>C)Rarely
+                        <div className="option_box" ><input type="radio" name="q18" value="A)Frequently" onChange={(e) =>  setPraque18(e.target.value)} required/><p>A)Frequently</p></div>
+                        <div className="option_box" ><input type="radio" name="q18" value="B)Moderately" onChange={(e) =>  setPraque18(e.target.value)}/><p>B)Moderately</p></div>
+                        <div className="option_box" ><input type="radio" name="q18" value="C)Rarely" onChange={(e) =>  setPraque18(e.target.value)}/><p>C)Rarely</p></div>
                         <br/>
                         
 
                         <h2>19.Do You recognize when You are Angry, and are you able to avoid losing my temper ?</h2>
-                        <input type="radio" name="q19" value="A)Very rarely" onChange={(e) =>  setPraque19(e.target.value)} required/>A)Very rarely
-                        <input type="radio" name="q19" value="B)Sometimes" onChange={(e) =>  setPraque19(e.target.value)}/>B)Sometimes
-                        <input type="radio" name="q19" value="C)Yes, Often" onChange={(e) =>  setPraque19(e.target.value)}/>C)Yes, Often
+                        <div className="option_box" ><input type="radio" name="q19" value="A)Very rarely" onChange={(e) =>  setPraque19(e.target.value)} required/><p>A)Very rarely</p></div>
+                        <div className="option_box" ><input type="radio" name="q19" value="B)Sometimes" onChange={(e) =>  setPraque19(e.target.value)}/><p>B)Sometimes</p></div>
+                        <div className="option_box" ><input type="radio" name="q19" value="C)Yes, Often" onChange={(e) =>  setPraque19(e.target.value)}/><p>C)Yes, Often</p></div>
                         <br/>
                         
 
                         <h2>20.Are you talkative?</h2>
-                        <input type="radio" name="q20" value="A)Talkative" onChange={(e) =>  setPraque20(e.target.value)} required/>A)Talkative 
-                        <input type="radio" name="q20" value="B)Like to gossip" onChange={(e) =>  setPraque20(e.target.value)}/>B)Like to gossip
-                        <input type="radio" name="q20" value="C)To the point talk" onChange={(e) =>  setPraque20(e.target.value)}/>C)To the point talk
+                        <div className="option_box" ><input type="radio" name="q20" value="A)Talkative" onChange={(e) =>  setPraque20(e.target.value)} required/><p>A)Talkative </p></div>
+                        <div className="option_box" ><input type="radio" name="q20" value="B)Like to gossip" onChange={(e) =>  setPraque20(e.target.value)}/><p>B)Like to gossip</p></div>
+                        <div className="option_box" ><input type="radio" name="q20" value="C)To the point talk" onChange={(e) =>  setPraque20(e.target.value)}/><p>C)To the point talk</p></div>
                         <br/>
                         
 
                         <h2>21.Your physical Activity Level</h2>
-                        <input type="radio" name="q21" value="A)Hyperactive" onChange={(e) =>  setPraque21(e.target.value)}required/>A)Hyperactive
-                        <input type="radio" name="q21" value="B)Moderately Active" onChange={(e) =>  setPraque21(e.target.value)}/>B)Moderately Active
-                        <input type="radio" name="q21" value="C)Less Active" onChange={(e) =>  setPraque21(e.target.value)}/>C)Less Active
+                        <div className="option_box" ><input type="radio" name="q21" value="A)Hyperactive" onChange={(e) =>  setPraque21(e.target.value)}required/><p>A)Hyperactive</p></div>
+                        <div className="option_box" ><input type="radio" name="q21" value="B)Moderately Active" onChange={(e) =>  setPraque21(e.target.value)}/><p>B)Moderately Active</p></div>
+                        <div className="option_box" ><input type="radio" name="q21" value="C)Less Active" onChange={(e) =>  setPraque21(e.target.value)}/><p>C)Less Active</p></div>
                         <br/>
                         
 
                         <h2>22.Do You take initiative and are highly motivated, even when You don’t feel like doing something ?</h2>
-                        <input type="radio" name="q22" value="A)Yes, Usally" onChange={(e) =>  setPraque22(e.target.value)} required/>A)Yes, Usally
-                        <input type="radio" name="q22" value="B)Sometimes" onChange={(e) =>  setPraque22(e.target.value)}/>B)Sometimes
-                        <input type="radio" name="q22" value="C)Rarely" onChange={(e) =>  setPraque22(e.target.value)}/>C)Rarely
+                        <div className="option_box" ><input type="radio" name="q22" value="A)Yes, Usally" onChange={(e) =>  setPraque22(e.target.value)} required/><p>A)Yes, Usally</p></div>
+                        <div className="option_box" ><input type="radio" name="q22" value="B)Sometimes" onChange={(e) =>  setPraque22(e.target.value)}/><p>B)Sometimes</p></div>
+                        <div className="option_box" ><input type="radio" name="q22" value="C)Rarely" onChange={(e) =>  setPraque22(e.target.value)}/><p>C)Rarely</p></div>
                         <br/>
                         
 
                         <h2>23.When under pressure, are you able to think clearly and stay focused</h2>
-                        <input type="radio" name="q23" value="A)Very rarely" onChange={(e) =>  setPraque23(e.target.value)} required/>A)Very rarely
-                        <input type="radio" name="q23" value="B)Sometimes" onChange={(e) =>  setPraque23(e.target.value)}/>B)Sometimes
-                        <input type="radio" name="q23" value="C)Yes, Often" onChange={(e) =>  setPraque23(e.target.value)}/>C)Yes, Often
+                        <div className="option_box" ><input type="radio" name="q23" value="A)Very rarely" onChange={(e) =>  setPraque23(e.target.value)} required/><p>A)Very rarely</p></div>
+                        <div className="option_box" ><input type="radio" name="q23" value="B)Sometimes" onChange={(e) =>  setPraque23(e.target.value)}/><p>B)Sometimes</p></div>
+                        <div className="option_box" ><input type="radio" name="q23" value="C)Yes, Often" onChange={(e) =>  setPraque23(e.target.value)}/><p>C)Yes, Often</p></div>
                         <br/>
                         
                     </div>
@@ -611,8 +611,8 @@ import React, { useState, useEffect } from "react";
                 
               ))
               : 'Loading...'} */}
+          <button id="submit-btn" className="w-long input" type="submit">Submit</button>
           </div>
-          <button className="w-long input" type="submit">Submit</button>
           
         </div>
         </form>
