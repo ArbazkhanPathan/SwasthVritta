@@ -110,6 +110,7 @@ const Navigation = () => {
                         <ul className={boxClassSubMenu.join(' ')} > 
                             {/* <li > <NavLink onClick={toggleClass} activeClassName='is-active'  to={"https://form.jotform.com/213123497958465"}> Register as Doctor </NavLink> </li> */}
                             <li > <a href="https://form.jotform.com/213123497958465" > Sign Up/In Doctor </a> </li>
+                            {/* <li > <a href="http://localhost/Swasthvritta/codecanyon-Il7dksD6-doxe-saas-doctors-chamber-prescription-appointment-software/doxe_v1.6/" > Sign Up/In Doctor </a> </li> */}
                             {/* <li><NavLink onClick={toggleClass} activeClassName='is-active' to={`/Offline`}> user signUp </NavLink> </li> */}
                             <li> <a href="https://form.jotform.com/220243403405440">Sign Up/in User</a> </li>
                         </ul>
