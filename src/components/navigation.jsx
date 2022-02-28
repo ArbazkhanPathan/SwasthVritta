@@ -100,6 +100,7 @@ const Navigation = () => {
                             <li > <NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Swasthvritta Essentials </NavLink> </li>
                             <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Swasthvritta's Kitchen </NavLink> </li>
                             <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Cart </NavLink> </li>
+                            <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/shop`}> Shop </NavLink> </li>
                         </ul>
                     </li>
 

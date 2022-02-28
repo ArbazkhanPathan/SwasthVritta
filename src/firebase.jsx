@@ -30,8 +30,9 @@ var firebaseApp = firebase.initializeApp({
 });
 
 var db = firebaseApp.firestore();
+const auth = firebase.auth();
 
-export { db };
+export { db, auth };
 
 
 

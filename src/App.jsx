@@ -27,6 +27,7 @@ import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import HashLoader from "react-spinners/HashLoader";
 import "./loading.css"
+import "./components/shop/App"
 // import Routepage from "./components/Route";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -106,6 +107,8 @@ const App = () => {
           {/* <Route exact path="/prakriti"> <Prakriti /> */}
           <Route exact path="/prakriti"> <Prakriti1 data={landingPageData.Prakriti1}/>
           </Route>
+          {/* This is the shop <App /> */}
+          <Route exact path="/shop"> < App /> </Route> 
           
         </Switch>
         
