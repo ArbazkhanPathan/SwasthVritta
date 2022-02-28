@@ -75,6 +75,10 @@ const App = () => {
         
       }
       <Router>
+        <Switch>
+          <Route exact path="/shop"> <ShopApp/>
+          </Route>
+        </Switch>
         <Navigation />
         <Switch>
           <Route exact path="/"> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />  <Contact data={landingPageData.Contact} /></Route>
@@ -105,8 +109,7 @@ const App = () => {
           <Route exact path="/prakriti"> <Prakriti1 data={landingPageData.Prakriti1}/>
           </Route>
           {/* This is the shop <App /> */} 
-          <Route exact path="/shop"> <ShopApp/>
-          </Route>
+          
           
         </Switch>
         
