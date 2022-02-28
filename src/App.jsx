@@ -27,7 +27,7 @@ import SmoothScroll from "smooth-scroll";
 import "./App.css";
 import HashLoader from "react-spinners/HashLoader";
 import "./loading.css"
-import "./components/shop/App"
+import ShopApp from "./components/shop/ShopApp"
 // import Routepage from "./components/Route";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
@@ -77,10 +77,7 @@ const App = () => {
       <Router>
         <Navigation />
         <Switch>
-          <Route exact path="/"> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />  <Contact data={landingPageData.Contact} />
-  
-          
-          </Route>
+          <Route exact path="/"> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />  <Contact data={landingPageData.Contact} /></Route>
           <Route exact path="/gallery"> <Gallery  /> <Contact data={landingPageData.Contact} />
           </Route>
           <Route exact path="/blog"> <Blog  /> <Contact data={landingPageData.Contact} />
@@ -98,8 +95,8 @@ const App = () => {
           
           <Route exact path="/aboutus"> <Aboutus data={landingPageData.About}/> <Team data={landingPageData.Team} /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/counting"> <Counting /> <Contact data={landingPageData.Contact} />
-          </Route>
+          {/* <Route exact path="/counting"> <Counting /> <Contact data={landingPageData.Contact} />
+          </Route> */}
           <Route exact path="/product"> <Product /> <Contact data={landingPageData.Contact} />
           </Route>
           <Route exact path="/Team"> <Team /> <Contact data={landingPageData.Contact} />
@@ -107,8 +104,9 @@ const App = () => {
           {/* <Route exact path="/prakriti"> <Prakriti /> */}
           <Route exact path="/prakriti"> <Prakriti1 data={landingPageData.Prakriti1}/>
           </Route>
-          {/* This is the shop <App /> */}
-          <Route exact path="/shop"> < App /> </Route> 
+          {/* This is the shop <App /> */} 
+          <Route exact path="/shop"> <ShopApp/>
+          </Route>
           
         </Switch>
         
