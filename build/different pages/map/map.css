@@ -1,0 +1,22 @@
+.map{
+    display:flex;
+    justify-content: space-around; 
+    background-color: rgb(245,232,188);
+}
+.map .map-img{
+    height: 400px;;
+    width: 500px;
+}
+.map .map-img img{
+    height:90%;
+    width: 100%;
+    padding:10px;
+    box-shadow: 14px;
+}
+.map .map-details{
+    padding:10px;
+    padding-right: 50px;
+}
+.map .map-details h3, p {
+    color: rgb(44, 57, 61);
+}
