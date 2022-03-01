@@ -97,10 +97,9 @@ const Navigation = () => {
 
                     <li onClick={toggleSubmenu2} className="menu-item sub__menus__arrows" > <Link to="#"> Shop <FiChevronDown /> </Link>
                         <ul className={boxClassSubMenu2.join(' ')} > 
-                            <li > <NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Swasthvritta Essentials </NavLink> </li>
+                            <li > <NavLink onClick={toggleClass} activeClassName='is-active' to={`/shop`}> Swasthvritta Essentials (Cloud 9) </NavLink> </li>
                             <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Swasthvritta's Kitchen </NavLink> </li>
                             <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/product`}> Cart </NavLink> </li>
-                            <li> <NavLink onClick={toggleClass} activeClassName='is-active' to={`/shop`}> Shop </NavLink> </li>
                         </ul>
                     </li>
 
