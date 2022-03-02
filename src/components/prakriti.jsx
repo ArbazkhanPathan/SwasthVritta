@@ -435,6 +435,95 @@ import React, { useState, useEffect } from "react";
             {/* {props.data
               ? props.data.map((d, i) => (
                 <div key={`${d.question}-${i}`} > */}
+
+
+
+<div className="wrapper" id="listq">
+                <div className="wrap">
+                  <div className="questions" id="q1">
+                    <div className="text-center pb-4">
+                      <div className="h5 font-weight-bold">1 of 23</div>
+                    </div>
+                    <div className="h4 font-weight-bold">Select your Physique type..</div>
+                    <div className="pt-4">
+                      <form>
+                        <label className="option_box" ><input type="radio" name="q1" value="A)Thin" onChange={(e) =>  setPraque1(e.target.value)} required/>A)Thin      </label>
+                        <label className="option_box" ><input type="radio" name="q1" value="B)Medium" onChange={(e) =>  setPraque1(e.target.value)} required/>B)Medium </label>
+                        <label className="option_box" ><input type="radio" name="q1" value="C)Heavy" onChange={(e) =>  setPraque1(e.target.value)} required/>C)Heavy   </label>
+                      </form>
+                    </div>
+                  </div>
+                  <div className="questions" id="q2">
+                    <div className="text-center pb-4">
+                      <div className="h5 font-weight-bold">2 of 23</div>
+                    </div>
+                    <div className="h4 font-weight-bold">2. Are you good at adapting and mixing with a variety of people</div>
+                    <div className="pt-4">
+                      <form>
+                        <label className="option_box" ><input type="radio" name="q2" value="A)Sometimes" onChange={(e) =>  setPraque2(e.target.value)} required/>A)Sometimes       </label>
+                        <label className="option_box" ><input type="radio" name="q2" value="B)Yes, almost Times" onChange={(e) =>  setPraque2(e.target.value)}/>B)Yes, almost Times</label>
+                        <label className="option_box" ><input type="radio" name="q2" value="C)Many Times" onChange={(e) =>  setPraque2(e.target.value)}/>C)Many Times              </label>
+                      </form>
+                    </div>
+                  </div>
+                  <div className="questions" id="q2">
+                    <div className="text-center pb-4">
+                      <div className="h5 font-weight-bold">3 of 5</div>
+                    </div>
+                    <div className="h4 font-weight-bold">Question 3</div>
+                    <div className="pt-4">
+                      <form>
+                        <label className="options">Answer 3.1<input type="radio" name="radio" /><span className="checkmark" /></label>
+                        <label className="options">Answer 3.2<input type="radio" name="radio" /><span className="checkmark" /></label>
+                        <label className="options">Answer 3.3<input type="radio" name="radio" /><span className="checkmark" /></label>
+                        <label className="options">Answer 3.4<input type="radio" name="radio" /><span className="checkmark" />
+                        </label>
+                      </form>
+                    </div>
+                  </div>
+                  <div className="questions" id="q3">
+                    <div className="text-center pb-4">
+                      <div className="h5 font-weight-bold">4 of 5</div>
+                    </div>
+                    <div className="h4 font-weight-bold">Contact Information</div>
+                    <div className="pt-4 details">
+                      <form>
+                        <input type="text" name="fname" id="fname" placeholder="First Name" required defaultValue />
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" required defaultValue /><br />
+                        <input type="email" name="email" id="email" placeholder="Email" required defaultValue /><br />
+                        <input type="tel" name="phno" id="phno" placeholder="Phone" required defaultValue /><br />
+                        <select className="w-long input" id="occupation" placeholder="Choose your occupation" required>
+                          <option>Student</option>
+                          <option>Employee</option>
+                          <option>House Wife</option>
+                          <option>Others</option>
+                        </select>
+                      </form>
+                    </div>
+                  </div>
+                  <div className="questions" id="q4">
+                    <div className="text-center pb-4">
+                      <div className="h5 font-weight-bold">5 of 5</div>
+                    </div>
+                    <div className="h4 font-weight-bold">Address</div>
+                    <div className="pt-4 details">
+                      <form>
+                        <textarea className="addr-text" name="address" id="address" placeholder="Address" required value rows={2} defaultValue={""} /><br />
+                        <input className="input" type="text" name="address" id="city" placeholder="City" required defaultValue />
+                        <input className="input" type="text" name="address" id="state" placeholder="State" required defaultValue />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div className="d-flex justify-content-end pt-2 navigator">
+                  <button className="btn btn-primary mx-3 hidden" id="back"><span className="fas fa-arrow-left pr-1" />Previous</button>
+                  <button className="btn btn-primary" id="next">Next <span className="fas fa-arrow-right" /></button>
+                  <button className="btn btn-primary hidden" id="submit">Submit <span className="fas fa-arrow-down" /></button>
+                </div>
+              </div>
+
+
+
                     <div className='box_assesment'>
                         {/* <h2>{d.question}</h2>
                         <input type="radio" name={d.id} value={d.option1} onChange={(e) => setPrakritians(e.target.value)}/>{d.option1}
@@ -444,31 +533,33 @@ import React, { useState, useEffect } from "react";
                         <button>{d.option2}</button>
                         <button>{d.option3}</button> */}
 
-                        <h2>1. Select your Physique type..</h2>
-                        <div className="option_box" ><input type="radio" name="q1" value="A)Thin" onChange={(e) =>  setPraque1(e.target.value)} required/>A)Thin</div>
-                        <div className="option_box" ><input type="radio" name="q1" value="B)Medium" onChange={(e) =>  setPraque1(e.target.value)} required/>B)Medium</div>
-                        <div className="option_box" ><input type="radio" name="q1" value="C)Heavy" onChange={(e) =>  setPraque1(e.target.value)} required/>C)Heavy</div>
-                        <br/>
+                        {/* <h2>1. Select your Physique type..</h2>
+                        <div className="option_box" ><input type="radio" name="q1" value="A)Thin" onChange={(e) =>  setPraque1(e.target.value)} required/>A)Thin     </div>
+                        <div className="option_box" ><input type="radio" name="q1" value="B)Medium" onChange={(e) =>  setPraque1(e.target.value)} required/>B)Medium    </div>
+                        <div className="option_box" ><input type="radio" name="q1" value="C)Heavy" onChange={(e) =>  setPraque1(e.target.value)} required/>C)Heavy      </div>
+                        <br/> */}
+
+
                         
 
                         <h2>2. Are you good at adapting and mixing with a variety of people</h2>
-                        <div className="option_box" ><input type="radio" name="q2" value="A)Sometimes" onChange={(e) =>  setPraque2(e.target.value)} required/>A)Sometimes</div>
-                        <div className="option_box" ><input type="radio" name="q2" value="B)Yes, almost Times" onChange={(e) =>  setPraque2(e.target.value)}/>B)Yes, almost Times</div>
-                        <div className="option_box" ><input type="radio" name="q2" value="C)Many Times" onChange={(e) =>  setPraque2(e.target.value)}/>C)Many Times</div>
+                        <div className="option_box" ><input type="radio" name="q2" value="A)Sometimes" onChange={(e) =>  setPraque2(e.target.value)} required/>A)Sometimes          </div>
+                        <div className="option_box" ><input type="radio" name="q2" value="B)Yes, almost Times" onChange={(e) =>  setPraque2(e.target.value)}/>B)Yes, almost Times   </div>
+                        <div className="option_box" ><input type="radio" name="q2" value="C)Many Times" onChange={(e) =>  setPraque2(e.target.value)}/>C)Many Times                 </div>
                         <br/>
                         
 
                         <h2>3. Select your skin type</h2>
                         <div className="option_box" ><input type="radio" name="q3" value="A)Dry and Rough" onChange={(e) =>  setPraque3(e.target.value)} required/>A)Dry and Rough</div>
-                        <div className="option_box" ><input type="radio" name="q3" value="B)Smooth" onChange={(e) =>  setPraque3(e.target.value)}/>B)Smooth</div>
-                        <div className="option_box" ><input type="radio" name="q3" value="C)Oily" onChange={(e) =>  setPraque3(e.target.value)}/>C)Oily</div>
-                        <br/>
+                        <div className="option_box" ><input type="radio" name="q3" value="B)Smooth" onChange={(e) =>  setPraque3(e.target.value)}/>B)Smooth                         </div>
+                        <div className="option_box" ><input type="radio" name="q3" value="C)Oily" onChange={(e) =>  setPraque3(e.target.value)}/>C)Oily                             </div>
+                        <br/>                                                                                                                                                                               
                         
 
                         <h2>4. Are your veins visible on skin</h2>
-                        <div className="option_box" ><input type="radio" name="q4" value="A)Visible (if veins are visible on hands and feet)" onChange={(e) =>  setPraque4(e.target.value)} required/>A)Visible (if veins are visible on hands and feet)</div>
-                        <div className="option_box" ><input type="radio" name="q4" value="B)Fairly Visible (if veins become visible on effort)" onChange={(e) =>  setPraque4(e.target.value)}/>B)Fairly Visible (if veins become visible on effort)</div>
-                        <div className="option_box" ><input type="radio" name="q4" value="C)Not visible (If veins not visible even on effort)" onChange={(e) =>  setPraque4(e.target.value)}/>C)Not visible (If veins not visible even on effort)</div>
+                        <div className="option_box" ><input type="radio" name="q4" value="A)Visible (if veins are visible on hands and feet)" onChange={(e) =>  setPraque4(e.target.value)} required/>A)Visible (if veins are visible on hands and feet) </div>
+                        <div className="option_box" ><input type="radio" name="q4" value="B)Fairly Visible (if veins become visible on effort)" onChange={(e) =>  setPraque4(e.target.value)}/>B)Fairly Visible (if veins become visible on effort)      </div>
+                        <div className="option_box" ><input type="radio" name="q4" value="C)Not visible (If veins not visible even on effort)" onChange={(e) =>  setPraque4(e.target.value)}/>C)Not visible (If veins not visible even on effort)        </div>
                         <br/>
                         
 
