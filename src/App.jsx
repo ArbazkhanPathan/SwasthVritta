@@ -20,7 +20,6 @@ import { Product } from "./components/product";
 import { Team } from "./components/Team";
 // import Prakriti1, { Prakriti } from "./components/Prakriti";
 import Prakriti1 from "./components/prakriti";
-import Prakrititry from "./components/try_prakrati";
 import Counting from "./components/counting";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
@@ -108,8 +107,6 @@ const App = () => {
           </Route>
           {/* <Route exact path="/prakriti"> <Prakriti /> */}
           <Route exact path="/prakriti"> <Prakriti1 data={landingPageData.Prakriti1}/>
-          </Route>
-          <Route exact path="/try_prakrati"> <Prakrititry data={landingPageData.Prakrititry}/>
           </Route>
           {/* This is the shop <App /> */} 
           

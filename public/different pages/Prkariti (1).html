@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        /* * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif
+        }
+
+        body {
+            background: #313131;
+        } */
+
+        .wrapper {
+            max-width: 730px;
+            margin: 80px auto 50px;
+            padding: 30px;
+            border-radius: 12px;
+            background: #FFFF00;
+            position: relative;
+            min-height: 500px;
+            overflow: hidden
+        }
+
+        .wrapper .wrap .questions {
+            width: 90%;
+            left: 40px;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            transition: 0.6s;
+        }
+
+        #q2,
+        #q3,
+        #q4 {
+            left: 750px
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            cursor: pointer
+        }
+
+        .options {
+            position: relative;
+            padding-left: 30px
+        }
+
+        .options input {
+            opacity: 0
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 4px;
+            left: 3px;
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border: 2px solid #444;
+            border-radius: 50%
+        }
+
+        .options input:checked~.checkmark:after {
+            display: block
+        }
+
+        .options .checkmark:after {
+            content: "";
+            width: 9px;
+            height: 9px;
+            display: block;
+            background: white;
+            position: absolute;
+            top: 51%;
+            left: 51%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: 300ms ease-in-out 0s
+        }
+
+        .options input[type="radio"]:checked~.checkmark {
+            background: #590995;
+            border: 2px solid #590995;
+            transition: 300ms ease-in-out 0s
+        }
+
+        .options input[type="radio"]:checked~.checkmark:after {
+            transform: translate(-50%, -50%) scale(1)
+        }
+
+        .btn.btn-primary {
+            background-color: #008148;
+            border: 1px solid #008148;
+        }
+
+        .btn {
+            background-color: inherit;
+            border: 1px solid #008148;
+            border-radius: 20px
+        }
+
+        .btn:focus {
+            box-shadow: none
+        }
+
+        .btn:hover {
+            background-color: #2F52E0;
+            color: #fff
+        }
+
+        .fa-arrow-right,
+        .fa-arrow-left {
+            transition: 0.2s ease-in all
+        }
+
+        .btn.btn-primary:hover .fa-arrow-right {
+            transform: translate(8px)
+        }
+
+        .btn.btn-primary:hover .fa-arrow-left {
+            transform: translate(-8px)
+        }
+
+        @media(max-width: 767px) {
+            .wrapper {
+                margin: 30px 10px;
+                height: 420px
+            }
+
+            .wrapper .wrap {
+                width: 280px;
+                left: 15px
+            }
+        }
+
+        .navigator {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+        .addr-text{
+            width: 90%;
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper" id="listq">
+        <div class="wrap">
+            <form>
+                <!-- <div className="form-div full-screen">
+                    <div className="heading">
+                      <img src="./img/images/bot.png" id="bot-img" alt="bot" />
+                        <p className="about-h1"><span>Hi I am Havya, Health Bot<br /></span>Tell me about you </p>
+                      </div>
+                      <div id="names">
+                          <div className="form-in">
+                              <input className="input" type="text" name="fname" id="fname" placeholder="First Name"  required/>
+                              <input className="input" type="text" name="lname" id="lname" placeholder="Last Name"  required/>
+                          </div>
+                          <div>
+                              <input type="email" className="w-long input" name="email" id="email" placeholder="Email Address"  required/> 
+                          </div>
+                          <div>
+                              <label>Today Date:- </label>
+                              <input type="date" className="input" name="date" id="date" placeholder="date"  required/> 
+                          </div>
+                          <div className="form-in">
+                             <input className="input" type="text" name="address" id="city" placeholder="City" > 
+                             <input className="input" type="text" name="address" id="state" placeholder="State"  required/> 
+                          </div>
+                          <div>
+                             <input className="input w-long" type="drop"  name="phno" id="phno" placeholder="Mobile Number" required/> 
+                          </div>
+                          <div>
+                             <select className="w-long input" id="occupation" placeholder="Choose your occupation"  required>
+                                 <option>Student</option>
+                                 <option>Employee</option>
+                                 <option>House Wife</option>
+                                 <option>Others</option>
+                             </select>
+                          </div>
+                          <div>
+                             <input type="text" className="w-long input" name="address" id="address" placeholder="Address"  required/> 
+                          </div>
+                          
+                          
+                      </div>
+                  </div> -->
+                <div class="questions" id="q1">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold">1 of 5</div>
+                    </div>
+                    <div class="h4 font-weight-bold">Question 1</div>
+                    <div class="pt-4">
+                        <input className="input" type="text" name="fname" id="fname" placeholder="First Name"  required/>
+                        <input className="input" type="text" name="lname" id="lname" placeholder="Last Name"  required/>
+                        <input type="email" className="w-long input" name="email" id="email" placeholder="Email Address"  required/>
+                    </div>
+                </div>
+                <div class="questions" id="q2">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold">2of 5</div>
+                    </div>
+                    <div class="h4 font-weight-bold">Today Date:-</div>
+                    <div class="pt-4">
+                        
+                              <input type="date" className="input" name="date" id="date" placeholder="date"  required/> 
+                    </br>
+                    <input className="input" type="text" name="address" id="city" placeholder="City" > 
+                             <input className="input" type="text" name="address" id="state" placeholder="State"  required/> 
+                    </div>
+                </div>
+                
+                
+                <div class="questions" id="q2">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold">3 of 5</div>
+                    </div>
+                    <div class="h4 font-weight-bold">Question 1</div>
+                    <div class="pt-4">
+                        <select className="w-long input" id="occupation" placeholder="Choose your occupation"  required>
+                            <option>Student</option>
+                            <option>Employee</option>
+                            <option>House Wife</option>
+                            <option>Others</option>
+                        </select>
+                    </br>
+                        <input type="text" className="w-long input" name="address" id="address" placeholder="Address"  required/> 
+                    </div>
+                </div>
+                
+                <div class="questions" id="q2">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold">1 of 5</div>
+                    </div>
+                    <div class="h4 font-weight-bold">Question 1</div>
+                    <div class="pt-4">
+                        <label class="options">Answer 1.1<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 1.2<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 1.3<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 1.4<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                    </div>
+                </div>
+                <div class="questions" id="q2">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold">1 of 5</div>
+                    </div>
+                    <div class="h4 font-weight-bold">Question 1</div>
+                    <div class="pt-4">
+                        <label class="options">Answer 1.1<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 1.2<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 1.3<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 1.4<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                    </div>
+                </div>
+                <div class="questions" id="q2">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold">1 of 5</div>
+                    </div>
+                    <div class="h4 font-weight-bold">Question 1</div>
+                    <div class="pt-4">
+                        <label class="options">Answer 1.1<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 1.2<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 1.3<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 1.4<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                    </div>
+                </div>
+                <div class="questions" id="q2">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold">2 of 5</div>
+                    </div>
+                    <div class="h4 font-weight-bold">Question 2</div>
+                    <div class="pt-4">
+                        <label class="options">Answer 2.1<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 2.2<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 2.3<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 2.4<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                    </div>
+                </div>
+                <div class="questions" id="q2">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold">3 of 5</div>
+                    </div>
+                    <div class="h4 font-weight-bold">Question 3</div>
+                    <div class="pt-4">
+                        <label class="options">Answer 3.1<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 3.2<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 3.3<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                        <label class="options">Answer 3.4<input type="radio" name="radio"><span
+                                class="checkmark"></span></label>
+                    </div>
+                </div>
+                <div class="questions" id="q3">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold">4 of 5</div>
+                    </div>
+                    <div class="h4 font-weight-bold">Contact Information</div>
+                    <div class="pt-4 details">
+                        <input type="text" name="fname" id="fname" placeholder="First Name" required="" value="">
+                        <input type="text" name="lname" id="lname" placeholder="Last Name" required="" value=""><br>
+                        <input type="email" name="email" id="email" placeholder="Email" required="" value=""><br>
+                        <input type="tel" name="phno" id="phno" placeholder="Phone" required="" value=""><br>
+                        <select class="w-long input" id="occupation" placeholder="Choose your occupation" required="">
+                            <option>Student</option>
+                            <option>Employee</option>
+                            <option>House Wife</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="questions" id="q4">
+                    <div class="text-center pb-4">
+                        <div class="h5 font-weight-bold">5 of 5</div>
+                    </div>
+                    <div class="h4 font-weight-bold">Address</div>
+                    <div class="pt-4 details">
+                        <textarea class="addr-text" name="address" id="address" placeholder="Address" required=""
+                            value="" rows="2"></textarea><br>
+                        <input class="input" type="text" name="address" id="city" placeholder="City" required=""
+                            value="">
+                        <input class="input" type="text" name="address" id="state" placeholder="State" required=""
+                            value="">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="d-flex justify-content-end pt-2 navigator">
+            <button class="btn btn-primary mx-3 hidden" id="back"><span
+                    class="fas fa-arrow-left pr-1"></span>Previous</button>
+            <button class="btn btn-primary" id="next">Next <span class="fas fa-arrow-right"></span></button>
+            <button class="btn btn-primary hidden" id="submit">Submit <span class="fas fa-arrow-down"></span></button>
+        </div>
+    </div>
+    
+    <script src='pra.js'>
+    </script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+</body>
+   
+
+</html>
