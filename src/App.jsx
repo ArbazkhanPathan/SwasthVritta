@@ -75,41 +75,41 @@ const App = () => {
         
         
       }
+
       <Router>
+        
+        
         <Switch>
           <Route exact path="/shop"> <ShopApp/>
           </Route>
-        </Switch>
-        <Navigation />
-        <Switch>
-          <Route exact path="/"> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />  <Contact data={landingPageData.Contact} /></Route>
-          <Route exact path="/gallery"> <Gallery  /> <Contact data={landingPageData.Contact} />
+          <Route exact path="/"><Navigation /> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />  <Contact data={landingPageData.Contact} /></Route>
+          <Route exact path="/gallery"><Navigation /> <Gallery  /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/blog"> <Blog  /> <Contact data={landingPageData.Contact} />
+          <Route exact path="/blog"><Navigation /> <Blog  /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/map"> <MapContainer  /> <Contact data={landingPageData.Contact} />
+          <Route exact path="/map"><Navigation /> <MapContainer  /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/achievement"> <Achievements  /> <Contact data={landingPageData.Contact} />
+          <Route exact path="/achievement"><Navigation /> <Achievements  /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/photos"> <Photos />   <Contact data={landingPageData.Contact} />
+          <Route exact path="/photos"><Navigation /> <Photos />   <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/videos"> <Videos />   <Contact data={landingPageData.Contact} />
+          <Route exact path="/videos"><Navigation /> <Videos />   <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/namaste"> <Namaste />   <Contact data={landingPageData.Contact} />
+          <Route exact path="/namaste"><Navigation /> <Namaste />   <Contact data={landingPageData.Contact} />
           </Route>
           
-          <Route exact path="/aboutus"> <Aboutus data={landingPageData.About}/> <Team data={landingPageData.Team} /> <Contact data={landingPageData.Contact} />
+          <Route exact path="/aboutus"><Navigation /> <Aboutus data={landingPageData.About}/> <Team data={landingPageData.Team} /> <Contact data={landingPageData.Contact} />
           </Route>
           {/* <Route exact path="/counting"> <Counting /> <Contact data={landingPageData.Contact} />
           </Route> */}
-          <Route exact path="/product"> <Product /> <Contact data={landingPageData.Contact} />
+          <Route exact path="/product"><Navigation /> <Product /> <Contact data={landingPageData.Contact} />
           </Route>
-          <Route exact path="/Team"> <Team /> <Contact data={landingPageData.Contact} />
+          <Route exact path="/Team"><Navigation /> <Team /> <Contact data={landingPageData.Contact} />
           </Route>
           {/* <Route exact path="/prakriti"> <Prakriti /> */}
-          <Route exact path="/prakriti"> <Prakriti1 data={landingPageData.Prakriti1}/>
+          <Route exact path="/prakriti"><Navigation /> <Prakriti1 data={landingPageData.Prakriti1}/>
           </Route>
-          <Route exact path="/try_prakrati"> <Prakrititry data={landingPageData.Prakrititry}/>
+          <Route exact path="/try_prakrati"><Navigation /> <Prakrititry data={landingPageData.Prakrititry}/>
           </Route>
           {/* This is the shop <App /> */} 
           

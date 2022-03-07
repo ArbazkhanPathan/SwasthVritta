@@ -1,4 +1,6 @@
 import "./pratry.css"
+
+
 const Prakrititry = (props) => {
 
     
@@ -97,6 +99,7 @@ const Prakrititry = (props) => {
                 </div>
               </div>
             </div>
+
           );
         }
 

@@ -18,14 +18,14 @@ function Home() {
             title="Cloud9 Aromatherapy Candles (Pack of 4) "
             price={400}
             rating={5}
-            image="./product_images/c9.jpeg"
+            image="./product_images/candel.png"
           />
           <Product
             id="49538094"
             title="Cloud9 Aromatherapy Candles (single) "
             price={400}
             rating={4}
-            image="./product_images/c9.jpeg "
+            image="./product_images/candle2.png "
           />
         </div>
         <div className="home__row">
@@ -34,14 +34,14 @@ function Home() {
             title="Cloud9 Aromatherapy Bath Salt 100g Lavendar"
             price={250}
             rating={5}
-            image="./product_images/lavendar.jpeg"
+            image="./product_images/lavander.png"
           />
           <Product
             id="49538094"
             title="Cloud9 Aromatherapy Bath Salt 200g Lavendar"
             price={400}
             rating={4}
-            image="./product_images/lavendar.jpeg "
+            image="./product_images/lavander.png "
           />
         </div>
         <div className="home__row">
@@ -50,14 +50,14 @@ function Home() {
             title="Cloud9 Aromatherapy Bath Salt 100g LEMONGRASS"
             price={250}
             rating={5}
-            image="./product_images/lemongrass.jpeg"
+            image="./product_images/lemongrass.png"
           />
           <Product
             id="49538094"
             title="Cloud9 Aromatherapy Bath Salt 200g LEMONGRASS"
             price={400}
             rating={4}
-            image="./product_images/lemongrass.jpeg"
+            image="./product_images/lemongrass.png"
           />
         </div>
         <div className="home__row">
@@ -66,14 +66,14 @@ function Home() {
             title="Cloud9 Aromatherapy Bath Salt 100g EUCALYPTUS"
             price={250}
             rating={5}
-            image="./product_images/eucalyptus.jpeg"
+            image="./product_images/eucalyptus.png"
           />
           <Product
             id="49538094"
             title="Cloud9 Aromatherapy Bath Salt 200g EUCALYPTUS"
             price={400}
             rating={4}
-            image="./product_images/eucalyptus.jpeg" />
+            image="./product_images/eucalyptus.png" />
         </div>
         <div className="home__row">
           <Product
@@ -81,14 +81,14 @@ function Home() {
             title="Cloud9 Aromatherapy Bath Salt 100g pepermint"
             price={250}
             rating={5}
-            image="./product_images/pepermint.jpeg"
+            image="./product_images/mint.png"
           />
           <Product
             id="49538094"
             title="Cloud9 Aromatherapy Bath Salt 200g CEDARWOOD"
             price={400}
             rating={4}
-            image="./product_images/pepermint.jpeg"
+            image="./product_images/mint.png"
           />
         </div>
         <div className="home__row">
@@ -97,14 +97,14 @@ function Home() {
             title="Cloud9 Aromatherapy Bath Salt 100g ROSEMARY"
             price={250}
             rating={5}
-            image="./product_images/rose.jpeg"
+            image="./product_images/rose.png"
           />
           <Product
             id="49538094"
             title="Cloud9 Aromatherapy Bath Salt 200g ROSEMARY"
             price={400}
             rating={4}
-            image="./product_images/rose.jpeg"
+            image="./product_images/rose.png"
           />
         </div>
 
