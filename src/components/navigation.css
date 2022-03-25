@@ -11,7 +11,7 @@
     top: 0;
     background-color: rgb(53,54,40);
   }
-  img {
+  .header__middle__logo img {
     max-width: 100%;
     height: auto;
   }

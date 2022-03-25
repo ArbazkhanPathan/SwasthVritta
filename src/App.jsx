@@ -6,6 +6,7 @@ import { Features } from "./components/features";
 import { About } from "./components/about";
 import Aboutus from "./components/aboutus";
 import Blog from "./components/blog";
+import Sponsors from "./components/sponsors";
 import Namaste from "./components/namaste";
 import Achievements from "./components/achievement";
 import Photos from "./components/photos";
@@ -81,7 +82,7 @@ const App = () => {
         </Switch>
         <Navigation />
         <Switch>
-          <Route exact path="/"> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/>  <Counting data={landingPageData.Counting} />  <Map />  <Contact data={landingPageData.Contact} /></Route>
+          <Route exact path="/"> <SocialMedia  /> <Slider /><Header  data={landingPageData.Header} /> <Features  />  <About data={landingPageData.About}/> <Sponsors /> <Counting data={landingPageData.Counting} />  <Map />  <Contact data={landingPageData.Contact} /></Route>
           <Route exact path="/gallery"> <Gallery  /> <Contact data={landingPageData.Contact} />
           </Route>
           <Route exact path="/blog"> <Blog  /> <Contact data={landingPageData.Contact} />

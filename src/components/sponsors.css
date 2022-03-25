@@ -1,0 +1,19 @@
+.sponsors-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .sponsors-container img {
+    border:2px black solid;
+    width: 22%;
+    height: 20%;
+    padding: 2px; 
+    /* 32:18, i.e. 16:9 */
+    /* margin-bottom: 2%;  */
+    /* (100-32*3)/2 */
+  }
+  .heading h1{
+    align-items: center;
+    position:center;
+  }

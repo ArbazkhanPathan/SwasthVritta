@@ -458,7 +458,7 @@ import React, { useState, useEffect } from "react";
                 <form className="form" id="submit-form" onSubmit={handleSubmit}>
                 <div className="questions" id="q1">
                     <div className="text-center pb-4">
-                      <div className="h5 font-weight-bold">1 of 23</div>
+                      <div className="h5 font-weight-bold">Contact Details</div>
                     </div>
                     <div className="h4 font-weight-bold">User details</div>
                     <div className="pt-4">
@@ -475,7 +475,7 @@ import React, { useState, useEffect } from "react";
                   </div>
                 <div className="questions" id="q2">
                     <div className="text-center pb-4">
-                      <div className="h5 font-weight-bold">2 of 23</div>
+                      <div className="h5 font-weight-bold">Contact Details</div>
                     </div>
                     <div className="h4 font-weight-bold">Today Date:- AND Address</div>
                     <div className="pt-4">
@@ -491,7 +491,7 @@ import React, { useState, useEffect } from "react";
                   </div>
                 <div className="questions" id="q2">
                     <div className="text-center pb-4">
-                      <div className="h5 font-weight-bold">3 of 23</div>
+                      <div className="h5 font-weight-bold">Contact Details</div>
                     </div>
                     <div className="h4 font-weight-bold">Choose your occupation AND complete Address</div>
                     <div className="pt-4">
